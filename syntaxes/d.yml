@@ -1023,9 +1023,6 @@ repository:
         - match: ;
           name: keyword.operator.semi-colon.d
         - include: 'source.d'
-  module:
-    packages:
-    - import: '#module-declaration'
   module-declaration:
     patterns:
     - begin: \b(module)\s+

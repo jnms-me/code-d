@@ -2178,13 +2178,6 @@
         }
       ]
     },
-    "module": {
-      "packages": [
-        {
-          "import": "#module-declaration"
-        }
-      ]
-    },
     "module-declaration": {
       "patterns": [
         {
