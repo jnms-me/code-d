@@ -8,37 +8,47 @@ patterns:
 repository:
   comment:
     patterns:
-    - include: '#block-comment'
-    - include: '#line-comment'
-    - include: '#nesting-block-comment'
-  block-comment:
-    patterns:
-    - begin: /((?!\*/)\*)+
-      beginCaptures:
-        0:
-          name: comment.block.begin.d
-      end: \*+/
-      endCaptures:
-        0:
-          name: comment.block.end.d
-      name: comment.block.content.d
-  line-comment:
-    patterns:
-    - match: //+.*$
-      name: comment.line.d
-  nesting-block-comment:
-    patterns:
-    - begin: /((?!\+/)\+)+
-      beginCaptures:
-        0:
-          name: comment.block.documentation.begin.d
-      end: \++/
-      endCaptures:
-        0:
-          name: comment.block.documentation.end.d
-      name: comment.block.documentation.content.d
-      patterns:
-      - include: '#nesting-block-comment'
+    - include: '#comment.line'
+    - include: '#comment.line-ddoc'
+    - include: '#comment.block'
+    - include: '#comment.block-ddoc'
+    - include: '#comment.block-nesting'
+    - include: '#comment.block-nesting-ddoc'
+    repository:
+      comment.line:
+        patterns:
+        - match: //(?!/).*$
+          name: comment.line.d
+      comment.line-ddoc:
+        patterns:
+        - match: ///.*$
+          name: comment.line.documentation.d
+      comment.block:
+        patterns:
+        - begin: /\*(?!\*(?!/))
+          end: \*/
+          name: comment.block.d
+      comment.block-ddoc:
+        patterns:
+        - begin: /\*\*
+          end: \*/
+          name: comment.block.documentation.d
+      comment.block-nesting:
+        patterns:
+        - begin: /\+(?!\+(?!/))
+          patterns:
+          - include: '#comment.block-nesting'
+          - include: '#comment.block-nesting-ddoc'
+          end: \+/
+          name: comment.block.d
+      comment.block-nesting-ddoc:
+        patterns:
+        - begin: /\+\+
+          patterns:
+          - include: '#comment.block-nesting'
+          - include: '#comment.block-nesting-ddoc'
+          end: \+/
+          name: comment.block.documentation.d
   type:
     patterns:
     - include: '#typeof'
