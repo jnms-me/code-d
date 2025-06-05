@@ -6,6 +6,39 @@ patterns:
 - include: '#statement'
 - include: '#expression'
 repository:
+  comment:
+    patterns:
+    - include: '#block-comment'
+    - include: '#line-comment'
+    - include: '#nesting-block-comment'
+  block-comment:
+    patterns:
+    - begin: /((?!\*/)\*)+
+      beginCaptures:
+        0:
+          name: comment.block.begin.d
+      end: \*+/
+      endCaptures:
+        0:
+          name: comment.block.end.d
+      name: comment.block.content.d
+  line-comment:
+    patterns:
+    - match: //+.*$
+      name: comment.line.d
+  nesting-block-comment:
+    patterns:
+    - begin: /((?!\+/)\+)+
+      beginCaptures:
+        0:
+          name: comment.block.documentation.begin.d
+      end: \++/
+      endCaptures:
+        0:
+          name: comment.block.documentation.end.d
+      name: comment.block.documentation.content.d
+      patterns:
+      - include: '#nesting-block-comment'
   type:
     patterns:
     - include: '#typeof'
@@ -1277,39 +1310,6 @@ repository:
           name: comment.block.documentation.eof.start.d
       end: (?!__NEVER_MATCH__)__NEVER_MATCH__
       name: text.eof.d
-  comment:
-    patterns:
-    - include: '#block-comment'
-    - include: '#line-comment'
-    - include: '#nesting-block-comment'
-  block-comment:
-    patterns:
-    - begin: /((?!\*/)\*)+
-      beginCaptures:
-        0:
-          name: comment.block.begin.d
-      end: \*+/
-      endCaptures:
-        0:
-          name: comment.block.end.d
-      name: comment.block.content.d
-  line-comment:
-    patterns:
-    - match: //+.*$
-      name: comment.line.d
-  nesting-block-comment:
-    patterns:
-    - begin: /((?!\+/)\+)+
-      beginCaptures:
-        0:
-          name: comment.block.documentation.begin.d
-      end: \++/
-      endCaptures:
-        0:
-          name: comment.block.documentation.end.d
-      name: comment.block.documentation.content.d
-      patterns:
-      - include: '#nesting-block-comment'
   token-string-content:
     patterns:
     - begin: '{'
