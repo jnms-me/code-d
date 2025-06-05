@@ -119,6 +119,40 @@
         }
       }
     },
+    "module-declaration": {
+      "patterns": [
+        {
+          "begin": "\\b(module)\\s+",
+          "end": ";",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.package.module.d"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "meta.module.end.d"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#module-identifier"
+            },
+            {
+              "include": "#comment"
+            }
+          ]
+        }
+      ]
+    },
+    "module-identifier": {
+      "patterns": [
+        {
+          "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
+          "name": "variable.parameter.module.d"
+        }
+      ]
+    },
     "type": {
       "patterns": [
         {
@@ -2178,32 +2212,6 @@
         }
       ]
     },
-    "module-declaration": {
-      "patterns": [
-        {
-          "begin": "\\b(module)\\s+",
-          "end": ";",
-          "beginCaptures": {
-            "1": {
-              "name": "keyword.package.module.d"
-            }
-          },
-          "endCaptures": {
-            "0": {
-              "name": "meta.module.end.d"
-            }
-          },
-          "patterns": [
-            {
-              "include": "#module-identifier"
-            },
-            {
-              "include": "#comment"
-            }
-          ]
-        }
-      ]
-    },
     "import-declaration": {
       "patterns": [
         {
@@ -2764,14 +2772,6 @@
         {
           "match": "\\b((\\.\\s*)?[_\\w][_\\d\\w]*)(\\s*\\.\\s*[_\\w][_\\d\\w]*)*\\b",
           "name": "variable.d"
-        }
-      ]
-    },
-    "module-identifier": {
-      "patterns": [
-        {
-          "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
-          "name": "variable.parameter.module.d"
         }
       ]
     },
