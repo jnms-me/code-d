@@ -1,7 +1,4 @@
 {
-  "fileTypes": [
-    "sdl"
-  ],
   "name": "Simple Declarative Language",
   "scopeName": "source.sdl",
   "repository": {

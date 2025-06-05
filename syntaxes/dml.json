@@ -1,7 +1,4 @@
 {
-  "fileTypes": [
-    "dml"
-  ],
   "name": "DlangUI Markup Language",
   "scopeName": "source.dml",
   "patterns": [

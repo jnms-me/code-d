@@ -1,5 +1,3 @@
-fileTypes:
-- dt
 name: Diet
 scopeName: source.diet
 patterns:
