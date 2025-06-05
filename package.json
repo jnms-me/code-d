@@ -333,7 +333,7 @@
 			},
 			{
 				"language": "dscript",
-				"scopeName": "source.dscript",
+				"scopeName": "source.d",
 				"path": "./syntaxes/d.json"
 			},
 			{
