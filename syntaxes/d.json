@@ -9,6 +9,9 @@
       "include": "#comment"
     },
     {
+      "include": "#declaration.module"
+    },
+    {
       "include": "#type"
     },
     {
@@ -119,33 +122,34 @@
         }
       }
     },
-    "module-declaration": {
+    "declaration.module": {
       "patterns": [
         {
-          "begin": "\\b(module)\\s+",
-          "end": ";",
+          "begin": "\\bmodule\\b",
           "beginCaptures": {
-            "1": {
-              "name": "keyword.package.module.d"
-            }
-          },
-          "endCaptures": {
             "0": {
-              "name": "meta.module.end.d"
+              "name": "keyword.other.module.d meta.module-declaration.begin.d"
             }
           },
+          "contentName": "meta.module-declaration.content.d",
           "patterns": [
             {
-              "include": "#module-identifier"
+              "include": "#identifier.module"
             },
             {
               "include": "#comment"
             }
-          ]
+          ],
+          "end": ";",
+          "endCaptures": {
+            "0": {
+              "name": "meta.module-declaration.end.d"
+            }
+          }
         }
       ]
     },
-    "module-identifier": {
+    "identifier.module": {
       "patterns": [
         {
           "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
@@ -704,9 +708,6 @@
     },
     "non-block-statement": {
       "patterns": [
-        {
-          "include": "#module-declaration"
-        },
         {
           "include": "#labeled-statement"
         },

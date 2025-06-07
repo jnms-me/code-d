@@ -3,6 +3,7 @@ scopeName: source.d
 patterns:
 - include: '#shebang'
 - include: '#comment'
+- include: '#declaration.module'
 - include: '#type'
 - include: '#statement'
 - include: '#expression'
@@ -54,20 +55,23 @@ repository:
           - include: '#comment.block-nesting-ddoc'
           end: \+/
           name: comment.block.documentation.d
-  module-declaration:
+  declaration.module:
     patterns:
-    - begin: \b(module)\s+
-      end: ;
+    - begin: \bmodule\b
       beginCaptures:
-        1:
-          name: keyword.package.module.d
+        0:
+          name:
+            keyword.other.module.d
+            meta.module-declaration.begin.d
+      contentName: meta.module-declaration.content.d
+      patterns:
+      - include: '#identifier.module'
+      - include: '#comment'
+      end: ;
       endCaptures:
         0:
-          name: meta.module.end.d
-      patterns:
-      - include: '#module-identifier'
-      - include: '#comment'
-  module-identifier:
+          name: meta.module-declaration.end.d
+  identifier.module:
     patterns:
     - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
       name: variable.parameter.module.d
@@ -328,7 +332,6 @@ repository:
     - include: '#semi-colon'
   non-block-statement:
     patterns:
-    - include: '#module-declaration'
     - include: '#labeled-statement'
     - include: '#if-statement'
     - include: '#while-statement'
