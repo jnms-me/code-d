@@ -1,11 +1,16 @@
 name: D
 scopeName: source.d
 patterns:
+- include: '#shebang'
 - include: '#comment'
 - include: '#type'
 - include: '#statement'
 - include: '#expression'
 repository:
+  shebang:
+    patterns:
+    - match: ^#!.*$
+      name: comment.line.shebang.d
   comment:
     patterns:
     - include: '#comment.line'

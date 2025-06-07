@@ -3,6 +3,9 @@
   "scopeName": "source.d",
   "patterns": [
     {
+      "include": "#shebang"
+    },
+    {
       "include": "#comment"
     },
     {
@@ -16,6 +19,14 @@
     }
   ],
   "repository": {
+    "shebang": {
+      "patterns": [
+        {
+          "match": "^#!.*$",
+          "name": "comment.line.shebang.d"
+        }
+      ]
+    },
     "comment": {
       "patterns": [
         {
