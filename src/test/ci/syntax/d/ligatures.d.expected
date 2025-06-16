@@ -1,2 +1,23 @@
-[{"start":0,"end":4,"scope":"storage.type.basic-type.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"variable.d"},{"start":6,"end":7,"scope":"source.d"},{"start":7,"end":8,"scope":"keyword.operator.assign.d"},{"start":8,"end":9,"scope":"source.d"},{"start":9,"end":10,"scope":"source.d"},{"start":10,"end":11,"scope":"source.d"},{"start":11,"end":12,"scope":"source.d"},{"start":12,"end":14,"scope":"keyword.operator.lambda.d"},{"start":14,"end":15,"scope":"source.d"},{"start":15,"end":16,"scope":"variable.d"},{"start":16,"end":17,"scope":"meta.statement.end.d"}]
-[{"start":0,"end":6,"scope":"storage.type.struct.d"},{"start":6,"end":7,"scope":"source.d"},{"start":7,"end":8,"scope":"entity.name.type.struct.d"},{"start":8,"end":9,"scope":"source.d"},{"start":9,"end":10,"scope":"variable.d"},{"start":10,"end":13,"scope":"source.d"},{"start":13,"end":14,"scope":"source.d"},{"start":14,"end":15,"scope":"source.d"},{"start":15,"end":16,"scope":"source.d"},{"start":16,"end":17,"scope":"source.d"}]
+L1 C0..4: source.d storage.type.basic-type.d
+L1 C4..5: source.d
+L1 C5..6: source.d variable.d
+L1 C6..7: source.d
+L1 C7..8: source.d keyword.operator.assign.d
+L1 C8..9: source.d
+L1 C9..10: source.d
+L1 C10..11: source.d
+L1 C11..12: source.d
+L1 C12..14: source.d keyword.operator.lambda.d
+L1 C14..15: source.d
+L1 C15..16: source.d variable.d
+L1 C16..17: source.d meta.statement.end.d
+L2 C0..6: source.d storage.type.struct.d
+L2 C6..7: source.d
+L2 C7..8: source.d entity.name.type.struct.d
+L2 C8..9: source.d
+L2 C9..10: source.d variable.d
+L2 C10..13: source.d
+L2 C13..14: source.d
+L2 C14..15: source.d source.d
+L2 C15..16: source.d source.d
+L2 C16..17: source.d

@@ -1,3 +1,61 @@
-[{"start":0,"end":11,"scope":"keyword.control.static-if.begin.d"},{"start":11,"end":13,"scope":"comment.block.d"},{"start":13,"end":26,"scope":"comment.block.d"},{"start":26,"end":28,"scope":"comment.block.d"},{"start":28,"end":29,"scope":"source.d"},{"start":29,"end":30,"scope":"variable.d"},{"start":30,"end":31,"scope":"source.d"},{"start":31,"end":33,"scope":"keyword.operator.identity.d"},{"start":33,"end":34,"scope":"source.d"},{"start":34,"end":35,"scope":"variable.d"},{"start":35,"end":36,"scope":"source.d"},{"start":36,"end":38,"scope":"keyword.operator.logical.d"},{"start":38,"end":39,"scope":"source.d"},{"start":39,"end":42,"scope":"keyword.token.is.begin.d"},{"start":42,"end":50,"scope":"variable.d"},{"start":50,"end":51,"scope":"keyword.token.is.end.d"},{"start":51,"end":52,"scope":"keyword.control.static-if.end.d"},{"start":52,"end":53,"scope":"source.d"},{"start":53,"end":61,"scope":"variable.d"},{"start":61,"end":62,"scope":"source.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":64,"scope":"source.d"},{"start":64,"end":69,"scope":"variable.d"},{"start":69,"end":70,"scope":"meta.statement.end.d"}]
-[{"start":0,"end":15,"scope":"keyword.other.static-assert.begin.d"},{"start":15,"end":17,"scope":"comment.block.d"},{"start":17,"end":19,"scope":"comment.block.d"},{"start":19,"end":20,"scope":"source.d"},{"start":20,"end":23,"scope":"keyword.token.is.begin.d"},{"start":23,"end":30,"scope":"keyword.token.typeof.d"},{"start":30,"end":34,"scope":"constant.language.boolean.true.d"},{"start":34,"end":35,"scope":"keyword.token.typeof.d"},{"start":35,"end":36,"scope":"keyword.token.is.end.d"},{"start":36,"end":37,"scope":"keyword.other.static-assert.end.d"},{"start":37,"end":38,"scope":"meta.statement.end.d"}]
-[{"start":0,"end":4,"scope":"storage.type.basic-type.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":9,"scope":"entity.name.function.d"},{"start":9,"end":10,"scope":"source.d"},{"start":10,"end":11,"scope":"source.d"},{"start":11,"end":12,"scope":"source.d"},{"start":12,"end":13,"scope":"source.d"},{"start":13,"end":14,"scope":"source.d"},{"start":14,"end":16,"scope":"keyword.control.if.d"},{"start":16,"end":17,"scope":"source.d"},{"start":17,"end":20,"scope":"keyword.token.is.begin.d"},{"start":20,"end":27,"scope":"keyword.token.typeof.d"},{"start":27,"end":28,"scope":"variable.d"},{"start":28,"end":29,"scope":"keyword.token.typeof.d"},{"start":29,"end":30,"scope":"keyword.token.is.end.d"},{"start":30,"end":31,"scope":"source.d"},{"start":31,"end":32,"scope":"keyword.operator.assign.d"},{"start":32,"end":33,"scope":"keyword.operator.assign.d"},{"start":33,"end":34,"scope":"source.d"},{"start":34,"end":35,"scope":"constant.numeric.integer.decimal.d"},{"start":35,"end":36,"scope":"source.d"},{"start":36,"end":37,"scope":"source.d"},{"start":37,"end":38,"scope":"source.d"},{"start":38,"end":39,"scope":"source.d"},{"start":39,"end":40,"scope":"source.d"},{"start":40,"end":41,"scope":"source.d"}]
+L1 C0..11: source.d keyword.control.static-if.begin.d
+L1 C11..13: source.d comment.block.d
+L1 C13..26: source.d comment.block.d
+L1 C26..28: source.d comment.block.d
+L1 C28..29: source.d
+L1 C29..30: source.d variable.d
+L1 C30..31: source.d
+L1 C31..33: source.d keyword.operator.identity.d
+L1 C33..34: source.d
+L1 C34..35: source.d variable.d
+L1 C35..36: source.d
+L1 C36..38: source.d keyword.operator.logical.d
+L1 C38..39: source.d
+L1 C39..42: source.d keyword.token.is.begin.d
+L1 C42..50: source.d variable.d
+L1 C50..51: source.d keyword.token.is.end.d
+L1 C51..52: source.d keyword.control.static-if.end.d
+L1 C52..53: source.d
+L1 C53..61: source.d variable.d
+L1 C61..62: source.d
+L1 C62..63: source.d
+L1 C63..64: source.d
+L1 C64..69: source.d variable.d
+L1 C69..70: source.d meta.statement.end.d
+L2 C0..15: source.d keyword.other.static-assert.begin.d
+L2 C15..17: source.d comment.block.d
+L2 C17..19: source.d comment.block.d
+L2 C19..20: source.d
+L2 C20..23: source.d keyword.token.is.begin.d
+L2 C23..30: source.d keyword.token.typeof.d
+L2 C30..34: source.d keyword.token.typeof.d constant.language.boolean.true.d
+L2 C34..35: source.d keyword.token.typeof.d
+L2 C35..36: source.d keyword.token.is.end.d
+L2 C36..37: source.d keyword.other.static-assert.end.d
+L2 C37..38: source.d meta.statement.end.d
+L3 C0..4: source.d storage.type.basic-type.d
+L3 C4..5: source.d
+L3 C5..9: source.d entity.name.function.d
+L3 C9..10: source.d
+L3 C10..11: source.d
+L3 C11..12: source.d source.d
+L3 C12..13: source.d source.d
+L3 C13..14: source.d
+L3 C14..16: source.d keyword.control.if.d
+L3 C16..17: source.d
+L3 C17..20: source.d keyword.token.is.begin.d
+L3 C20..27: source.d keyword.token.typeof.d
+L3 C27..28: source.d keyword.token.typeof.d variable.d
+L3 C28..29: source.d keyword.token.typeof.d
+L3 C29..30: source.d keyword.token.is.end.d
+L3 C30..31: source.d
+L3 C31..32: source.d keyword.operator.assign.d
+L3 C32..33: source.d keyword.operator.assign.d
+L3 C33..34: source.d
+L3 C34..35: source.d constant.numeric.integer.decimal.d
+L3 C35..36: source.d
+L3 C36..37: source.d source.d
+L3 C37..38: source.d source.d
+L3 C38..39: source.d
+L3 C39..40: source.d
+L3 C40..41: source.d

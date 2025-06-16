@@ -1,11 +1,9 @@
 import * as assert from 'assert';
-import * as vscode from 'vscode';
 import * as fs from 'fs';
+import * as mocha from 'mocha';
 import * as path from 'path';
-import * as vsctm from 'vscode-textmate';
 import * as oniguruma from 'vscode-oniguruma';
-import { suite, test } from 'mocha';
-import { IRawGrammar } from 'vscode-textmate/release/rawGrammar';
+import * as vsctm from 'vscode-textmate';
 
 /**
  * Resolves a package relative path (relative to root folder / package.json folder) to the actual path
@@ -15,113 +13,119 @@ function res(pathStr: string): string {
 	return path.join(__dirname, "../../../", pathStr);
 }
 
-const wasmBin = fs.readFileSync(res('node_modules/vscode-oniguruma/release/onig.wasm')).buffer;
-const vscodeOnigurumaLib = oniguruma.loadWASM(wasmBin).then(() => {
-	return {
-		createOnigScanner: function(patterns: any) { return new oniguruma.OnigScanner(patterns); },
-		createOnigString: function(s: any) { return new oniguruma.OnigString(s); }
-	};
-});
+const onigWasmPath = res("node_modules/vscode-oniguruma/release/onig.wasm");
 
-function readFile(pathStr: string): Promise<Buffer> {
+const syntaxTestRootPath = res("src/test/ci/syntax");
+
+const syntaxes = {
+	d: {
+		extension: ".d",
+	},
+	diet: {
+		extension: ".dt",
+	},
+	dml: {
+		extension: ".dml",
+	},
+	sdl: {
+		extension: ".sdl",
+	},
+};
+
+function readTextFile(pathStr: string): Promise<string> {
 	return new Promise((resolve, reject) => {
-		fs.readFile(res(pathStr), (error, data) => error ? reject(error) : resolve(data));
+		fs.readFile(pathStr, (error, data) => error ? reject(error) : resolve(data.toString()));
 	});
+}
+
+function splitLines(s: string): string[] {
+	return s.split(/\r?\n/g);
+}
+
+function joinLines(lines: string[]): string {
+	return lines.join("\n");
 }
 
 const registry = new vsctm.Registry({
-	onigLib: vscodeOnigurumaLib,
-	loadGrammar: async (scopeName): Promise<IRawGrammar | undefined | null> => {
-		if (scopeName === 'source.diet') {
-			const data = await readFile('syntaxes/diet.json');
-			return vsctm.parseRawGrammar(data.toString(), 'syntaxes/diet.json');
+	onigLib: async function () {
+		const { buffer } = fs.readFileSync(onigWasmPath);
+		await oniguruma.loadWASM(buffer);
+		const lib: vsctm.IOnigLib = {
+			createOnigScanner: (patterns: string[]) => new oniguruma.OnigScanner(patterns),
+			createOnigString: (s: string) => new oniguruma.OnigString(s),
+		};
+		return lib;
+	}(),
+	loadGrammar: async function (scopeName) {
+		const prefix = "source.";
+		if (scopeName.startsWith(prefix)) {
+			const name = scopeName.substring(prefix.length);
+			if (name in syntaxes) {
+				const syntaxFilePath = res(`syntaxes/${name}.json`);
+				const syntaxFileContents = await readTextFile(syntaxFilePath);
+				return vsctm.parseRawGrammar(syntaxFileContents, syntaxFilePath);
+			}
 		}
-		else if (scopeName === 'source.d') {
-			const data = await readFile('syntaxes/d.json');
-			return vsctm.parseRawGrammar(data.toString(), 'syntaxes/d.json');
-		}
-		else if (scopeName === 'source.dml') {
-			const data = await readFile('syntaxes/dml.json');
-			return vsctm.parseRawGrammar(data.toString(), 'syntaxes/dml.json');
-		}
-		else if (scopeName === 'source.sdl') {
-			const data = await readFile('syntaxes/sdl.json');
-			return vsctm.parseRawGrammar(data.toString(), 'syntaxes/sdl.json');
-		}
-		console.error(`Unknown scope name: ${scopeName}`);
 		return null;
-	}
+	},
 });
 
-function testSyntaxes(grammar: vsctm.IGrammar, folder: string, ext: string) {
-	return new Promise((resolve, reject) => {
-		if (!fs.existsSync(res(folder)))
-			return resolve(null);
-
-		fs.readdir(res(folder), async (err, files) => {
-			if (err)
-				return reject(err);
-
-			try {
-				for (let i = 0; i < files.length; i++) {
-					const file = files[i];
-
-					if (!file.endsWith(ext))
-						continue;
-
-					let ruleStack = vsctm.INITIAL;
-
-					const text = await readFile(path.join(folder, file));
-					const lines = text.toString().split(/\r?\n/g);
-					const tokens = lines.map(line => grammar.tokenizeLine(line, ruleStack).tokens.map(a => {
-						return {
-							start: a.startIndex,
-							end: a.endIndex,
-							scope: a.scopes[a.scopes.length - 1]
-						};
-					}));
-
-					const actual = tokens.map(line => JSON.stringify(line)).join("\n");
-					fs.writeFileSync(res(path.join(folder, file) + ".actual"), actual);
-
-					const expectedText = await readFile(path.join(folder, file) + ".expected");
-					const expectedLines = expectedText.toString().split(/\r?\n/g);
-					const expectedTokens = expectedLines.map(line => JSON.parse(line));
-
-					assert.deepStrictEqual(tokens, expectedTokens, "error in " + file);
-				}
-				resolve(undefined);
-			}
-			catch (e) {
-				reject(e);
-			}
-		});
-	});
+function getTestSourceFilePaths(name: string, extension: string): string[] {
+	const root = path.join(syntaxTestRootPath, name);
+	if (!fs.existsSync(root))
+		return [];
+	return fs.readdirSync(root)
+		.filter(relPath => relPath.endsWith(extension))
+		.map(relPath => path.join(root, relPath));
 }
 
-suite("syntax tests", () => {
-	test("diet", () => {
-		return registry.loadGrammar('source.diet').then(grammar => {
-			if (!grammar)
-				throw new Error("grammar didn't load");
+async function testSyntax(scope: string, sourceFilePath: string) {
+	const grammarNullable = await registry.loadGrammar(scope);
+	assert(grammarNullable);
+	const grammar = grammarNullable;
 
-			return testSyntaxes(grammar, "src/test/ci/syntax/diet", ".dt");
-		});
-	});
-	test("d", () => {
-		return registry.loadGrammar('source.d').then(grammar => {
-			if (!grammar)
-				throw new Error("grammar didn't load");
+	function parseLines(lines: string[]): string[] {
+		let parsedLines: string[] = [];
+		let ruleStack = vsctm.INITIAL;
+		for (const [i, line] of lines.entries()) {
+			const lineNumber = i + 1;
+			const tokenizedLine = grammar.tokenizeLine(line, ruleStack);
+			assert(!tokenizedLine.stoppedEarly, `Parsing line ${lineNumber} timed out`);
+			ruleStack = tokenizedLine.ruleStack;
+			for (const t of tokenizedLine.tokens) {
+				parsedLines.push(`L${lineNumber} C${t.startIndex}..${t.endIndex}: ${t.scopes.join(" ")}`);
+			}
+		}
+		return parsedLines;
+	}
 
-			return testSyntaxes(grammar, "src/test/ci/syntax/d", ".d");
-		});
-	});
-	test("dml", () => {
-		return registry.loadGrammar('source.dml').then(grammar => {
-			if (!grammar)
-				throw new Error("grammar didn't load");
+	const sourceCode = await readTextFile(sourceFilePath);
+	const lines = splitLines(sourceCode);
+	const parsedLines = parseLines(lines);
+	const parsed = joinLines(parsedLines);
+	fs.writeFileSync(`${sourceFilePath}.actual`, parsed);
 
-			return testSyntaxes(grammar, "src/test/ci/syntax/dml", ".dml");
+	const expectedParsed = await readTextFile(`${sourceFilePath}.expected`);
+	const expectedParsedLines = splitLines(expectedParsed);
+
+	assert.deepStrictEqual(parsedLines, expectedParsedLines, `Unexpected result for ${sourceFilePath}`);
+}
+
+mocha.suite("syntax tests", function () {
+	for (const [name, props] of Object.entries(syntaxes)) {
+		const scopeName = `source.${name}`;
+		mocha.suite(name, function () {
+			const sourceFilePaths = getTestSourceFilePaths(name, props.extension);
+			if (sourceFilePaths.length) {
+				for (const sourceFilePath of sourceFilePaths) {
+					const sourceFileName = path.basename(sourceFilePath);
+					mocha.test(sourceFileName, async function () {
+						await testSyntax(scopeName, sourceFilePath);
+					});
+				}
+			} else {
+				mocha.test(`No tests for ${name}`);
+			}
 		});
-	});
+	}
 });

@@ -1,24 +1,264 @@
-[{"start":0,"end":11,"scope":"comment.line.d"}]
-[{"start":0,"end":5,"scope":"keyword.other.alias.d"},{"start":5,"end":6,"scope":"source.d"},{"start":6,"end":19,"scope":"variable.d"},{"start":19,"end":20,"scope":"source.d"},{"start":20,"end":21,"scope":"keyword.operator.equal.alias.d"},{"start":21,"end":22,"scope":"source.d"},{"start":22,"end":30,"scope":"variable.d"},{"start":30,"end":32,"scope":"source.d"}]
-[{"start":0,"end":4,"scope":"source.d"},{"start":4,"end":8,"scope":"variable.d"},{"start":8,"end":10,"scope":"source.d"},{"start":10,"end":15,"scope":"storage.type.basic-type.d"},{"start":15,"end":16,"scope":"keyword.operator.comma.d"},{"start":16,"end":17,"scope":"source.d"},{"start":17,"end":19,"scope":"constant.numeric.integer.decimal.d"},{"start":19,"end":20,"scope":"source.d"},{"start":20,"end":21,"scope":"keyword.operator.numeric.d"},{"start":21,"end":22,"scope":"source.d"},{"start":22,"end":27,"scope":"storage.type.basic-type.d"},{"start":27,"end":34,"scope":"variable.d"},{"start":34,"end":35,"scope":"source.d"},{"start":35,"end":36,"scope":"source.d"},{"start":36,"end":37,"scope":"source.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"},{"start":68,"end":69,"scope":"source.d"},{"start":69,"end":73,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":73,"end":74,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":6,"scope":"source.d"},{"start":6,"end":7,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":4,"scope":"source.d"},{"start":4,"end":8,"scope":"variable.d"},{"start":8,"end":10,"scope":"source.d"},{"start":10,"end":15,"scope":"storage.type.basic-type.d"},{"start":15,"end":16,"scope":"keyword.operator.numeric.d"},{"start":16,"end":17,"scope":"keyword.operator.comma.d"},{"start":17,"end":18,"scope":"source.d"},{"start":18,"end":20,"scope":"constant.numeric.integer.decimal.d"},{"start":20,"end":21,"scope":"source.d"},{"start":21,"end":22,"scope":"keyword.operator.numeric.d"},{"start":22,"end":23,"scope":"source.d"},{"start":23,"end":28,"scope":"storage.type.basic-type.d"},{"start":28,"end":35,"scope":"variable.d"},{"start":35,"end":36,"scope":"source.d"},{"start":36,"end":37,"scope":"source.d"},{"start":37,"end":38,"scope":"source.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"},{"start":50,"end":51,"scope":"source.d"},{"start":51,"end":55,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":55,"end":56,"scope":"keyword.operator.comma.d"},{"start":56,"end":57,"scope":"source.d"},{"start":57,"end":61,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":61,"end":62,"scope":"keyword.operator.comma.d"},{"start":62,"end":63,"scope":"source.d"},{"start":63,"end":67,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":67,"end":68,"scope":"keyword.operator.comma.d"},{"start":68,"end":69,"scope":"source.d"},{"start":69,"end":73,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":73,"end":74,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":8,"scope":"source.d"},{"start":8,"end":10,"scope":"comment.block.d"},{"start":10,"end":42,"scope":"comment.block.d"},{"start":42,"end":44,"scope":"comment.block.d"},{"start":44,"end":45,"scope":"source.d"},{"start":45,"end":49,"scope":"constant.numeric.integer.hexadecimal.d"},{"start":49,"end":50,"scope":"keyword.operator.comma.d"}]
-[{"start":0,"end":7,"scope":"source.d"}]
-[{"start":0,"end":1,"scope":"source.d"},{"start":1,"end":2,"scope":"meta.statement.end.d"}]
+L1 C0..11: source.d comment.line.d
+L2 C0..5: source.d keyword.other.alias.d
+L2 C5..6: source.d
+L2 C6..19: source.d variable.d
+L2 C19..20: source.d
+L2 C20..21: source.d keyword.operator.equal.alias.d
+L2 C21..22: source.d
+L2 C22..30: source.d variable.d
+L2 C30..32: source.d
+L3 C0..4: source.d
+L3 C4..8: source.d variable.d
+L3 C8..10: source.d
+L3 C10..15: source.d storage.type.basic-type.d
+L3 C15..16: source.d keyword.operator.comma.d
+L3 C16..17: source.d
+L3 C17..19: source.d constant.numeric.integer.decimal.d
+L3 C19..20: source.d
+L3 C20..21: source.d keyword.operator.numeric.d
+L3 C21..22: source.d
+L3 C22..27: source.d storage.type.basic-type.d
+L3 C27..34: source.d variable.d
+L3 C34..35: source.d
+L3 C35..36: source.d
+L3 C36..37: source.d
+L4 C0..8: source.d
+L4 C8..10: source.d comment.block.d
+L4 C10..42: source.d comment.block.d
+L4 C42..44: source.d comment.block.d
+L4 C44..45: source.d
+L4 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L4 C49..50: source.d keyword.operator.comma.d
+L5 C0..8: source.d
+L5 C8..10: source.d comment.block.d
+L5 C10..42: source.d comment.block.d
+L5 C42..44: source.d comment.block.d
+L5 C44..45: source.d
+L5 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L5 C49..50: source.d keyword.operator.comma.d
+L5 C50..51: source.d
+L5 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L5 C55..56: source.d keyword.operator.comma.d
+L5 C56..57: source.d
+L5 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L5 C61..62: source.d keyword.operator.comma.d
+L6 C0..8: source.d
+L6 C8..10: source.d comment.block.d
+L6 C10..42: source.d comment.block.d
+L6 C42..44: source.d comment.block.d
+L6 C44..45: source.d
+L6 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L6 C49..50: source.d keyword.operator.comma.d
+L6 C50..51: source.d
+L6 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L6 C55..56: source.d keyword.operator.comma.d
+L6 C56..57: source.d
+L6 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L6 C61..62: source.d keyword.operator.comma.d
+L6 C62..63: source.d
+L6 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L6 C67..68: source.d keyword.operator.comma.d
+L7 C0..8: source.d
+L7 C8..10: source.d comment.block.d
+L7 C10..42: source.d comment.block.d
+L7 C42..44: source.d comment.block.d
+L7 C44..45: source.d
+L7 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L7 C49..50: source.d keyword.operator.comma.d
+L7 C50..51: source.d
+L7 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L7 C55..56: source.d keyword.operator.comma.d
+L7 C56..57: source.d
+L7 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L7 C61..62: source.d keyword.operator.comma.d
+L7 C62..63: source.d
+L7 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L7 C67..68: source.d keyword.operator.comma.d
+L8 C0..8: source.d
+L8 C8..10: source.d comment.block.d
+L8 C10..42: source.d comment.block.d
+L8 C42..44: source.d comment.block.d
+L8 C44..45: source.d
+L8 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L8 C49..50: source.d keyword.operator.comma.d
+L8 C50..51: source.d
+L8 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L8 C55..56: source.d keyword.operator.comma.d
+L8 C56..57: source.d
+L8 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L8 C61..62: source.d keyword.operator.comma.d
+L8 C62..63: source.d
+L8 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L8 C67..68: source.d keyword.operator.comma.d
+L9 C0..8: source.d
+L9 C8..10: source.d comment.block.d
+L9 C10..42: source.d comment.block.d
+L9 C42..44: source.d comment.block.d
+L9 C44..45: source.d
+L9 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L9 C49..50: source.d keyword.operator.comma.d
+L9 C50..51: source.d
+L9 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L9 C55..56: source.d keyword.operator.comma.d
+L9 C56..57: source.d
+L9 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L9 C61..62: source.d keyword.operator.comma.d
+L9 C62..63: source.d
+L9 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L9 C67..68: source.d keyword.operator.comma.d
+L9 C68..69: source.d
+L9 C69..73: source.d constant.numeric.integer.hexadecimal.d
+L9 C73..74: source.d keyword.operator.comma.d
+L10 C0..8: source.d
+L10 C8..10: source.d comment.block.d
+L10 C10..42: source.d comment.block.d
+L10 C42..44: source.d comment.block.d
+L10 C44..45: source.d
+L10 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L10 C49..50: source.d keyword.operator.comma.d
+L11 C0..8: source.d
+L11 C8..10: source.d comment.block.d
+L11 C10..42: source.d comment.block.d
+L11 C42..44: source.d comment.block.d
+L11 C44..45: source.d
+L11 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L11 C49..50: source.d keyword.operator.comma.d
+L12 C0..4: source.d
+L12 C4..5: source.d
+L12 C5..6: source.d
+L12 C6..7: source.d keyword.operator.comma.d
+L13 C0..4: source.d
+L13 C4..8: source.d variable.d
+L13 C8..10: source.d
+L13 C10..15: source.d storage.type.basic-type.d
+L13 C15..16: source.d keyword.operator.numeric.d
+L13 C16..17: source.d keyword.operator.comma.d
+L13 C17..18: source.d
+L13 C18..20: source.d constant.numeric.integer.decimal.d
+L13 C20..21: source.d
+L13 C21..22: source.d keyword.operator.numeric.d
+L13 C22..23: source.d
+L13 C23..28: source.d storage.type.basic-type.d
+L13 C28..35: source.d variable.d
+L13 C35..36: source.d
+L13 C36..37: source.d
+L13 C37..38: source.d
+L14 C0..8: source.d
+L14 C8..10: source.d comment.block.d
+L14 C10..42: source.d comment.block.d
+L14 C42..44: source.d comment.block.d
+L14 C44..45: source.d
+L14 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L14 C49..50: source.d keyword.operator.comma.d
+L15 C0..8: source.d
+L15 C8..10: source.d comment.block.d
+L15 C10..42: source.d comment.block.d
+L15 C42..44: source.d comment.block.d
+L15 C44..45: source.d
+L15 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L15 C49..50: source.d keyword.operator.comma.d
+L15 C50..51: source.d
+L15 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L15 C55..56: source.d keyword.operator.comma.d
+L15 C56..57: source.d
+L15 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L15 C61..62: source.d keyword.operator.comma.d
+L16 C0..8: source.d
+L16 C8..10: source.d comment.block.d
+L16 C10..42: source.d comment.block.d
+L16 C42..44: source.d comment.block.d
+L16 C44..45: source.d
+L16 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L16 C49..50: source.d keyword.operator.comma.d
+L16 C50..51: source.d
+L16 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L16 C55..56: source.d keyword.operator.comma.d
+L16 C56..57: source.d
+L16 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L16 C61..62: source.d keyword.operator.comma.d
+L17 C0..8: source.d
+L17 C8..10: source.d comment.block.d
+L17 C10..42: source.d comment.block.d
+L17 C42..44: source.d comment.block.d
+L17 C44..45: source.d
+L17 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L17 C49..50: source.d keyword.operator.comma.d
+L17 C50..51: source.d
+L17 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L17 C55..56: source.d keyword.operator.comma.d
+L17 C56..57: source.d
+L17 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L17 C61..62: source.d keyword.operator.comma.d
+L17 C62..63: source.d
+L17 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L17 C67..68: source.d keyword.operator.comma.d
+L18 C0..8: source.d
+L18 C8..10: source.d comment.block.d
+L18 C10..42: source.d comment.block.d
+L18 C42..44: source.d comment.block.d
+L18 C44..45: source.d
+L18 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L18 C49..50: source.d keyword.operator.comma.d
+L18 C50..51: source.d
+L18 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L18 C55..56: source.d keyword.operator.comma.d
+L18 C56..57: source.d
+L18 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L18 C61..62: source.d keyword.operator.comma.d
+L18 C62..63: source.d
+L18 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L18 C67..68: source.d keyword.operator.comma.d
+L19 C0..8: source.d
+L19 C8..10: source.d comment.block.d
+L19 C10..42: source.d comment.block.d
+L19 C42..44: source.d comment.block.d
+L19 C44..45: source.d
+L19 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L19 C49..50: source.d keyword.operator.comma.d
+L19 C50..51: source.d
+L19 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L19 C55..56: source.d keyword.operator.comma.d
+L19 C56..57: source.d
+L19 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L19 C61..62: source.d keyword.operator.comma.d
+L19 C62..63: source.d
+L19 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L19 C67..68: source.d keyword.operator.comma.d
+L20 C0..8: source.d
+L20 C8..10: source.d comment.block.d
+L20 C10..42: source.d comment.block.d
+L20 C42..44: source.d comment.block.d
+L20 C44..45: source.d
+L20 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L20 C49..50: source.d keyword.operator.comma.d
+L20 C50..51: source.d
+L20 C51..55: source.d constant.numeric.integer.hexadecimal.d
+L20 C55..56: source.d keyword.operator.comma.d
+L20 C56..57: source.d
+L20 C57..61: source.d constant.numeric.integer.hexadecimal.d
+L20 C61..62: source.d keyword.operator.comma.d
+L20 C62..63: source.d
+L20 C63..67: source.d constant.numeric.integer.hexadecimal.d
+L20 C67..68: source.d keyword.operator.comma.d
+L20 C68..69: source.d
+L20 C69..73: source.d constant.numeric.integer.hexadecimal.d
+L20 C73..74: source.d keyword.operator.comma.d
+L21 C0..8: source.d
+L21 C8..10: source.d comment.block.d
+L21 C10..42: source.d comment.block.d
+L21 C42..44: source.d comment.block.d
+L21 C44..45: source.d
+L21 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L21 C49..50: source.d keyword.operator.comma.d
+L22 C0..8: source.d
+L22 C8..10: source.d comment.block.d
+L22 C10..42: source.d comment.block.d
+L22 C42..44: source.d comment.block.d
+L22 C44..45: source.d
+L22 C45..49: source.d constant.numeric.integer.hexadecimal.d
+L22 C49..50: source.d keyword.operator.comma.d
+L23 C0..4: source.d
+L23 C4..5: source.d
+L23 C5..6: source.d
+L24 C0..1: source.d
+L24 C1..2: source.d meta.alias.end.d

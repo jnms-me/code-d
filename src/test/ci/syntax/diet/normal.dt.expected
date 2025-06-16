@@ -1,14 +1,80 @@
-[{"start":0,"end":12,"scope":"entity.name.tag.sgml.doctype.diet"}]
-[{"start":0,"end":1,"scope":"source.diet"}]
-[{"start":0,"end":4,"scope":"entity.name.tag.diet"},{"start":4,"end":5,"scope":"constant.name.attribute.tag.diet"},{"start":5,"end":9,"scope":"entity.other.attribute-name.tag.diet"},{"start":9,"end":10,"scope":"attribute_value"},{"start":10,"end":11,"scope":"string.quoted.diet"},{"start":11,"end":13,"scope":"string.quoted.diet"},{"start":13,"end":14,"scope":"string.quoted.diet"},{"start":14,"end":15,"scope":"constant.name.attribute.tag.diet"}]
-[{"start":0,"end":1,"scope":"source.diet"},{"start":1,"end":5,"scope":"entity.name.tag.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":6,"scope":"entity.name.tag.diet"},{"start":6,"end":7,"scope":"constant.name.attribute.tag.diet"},{"start":7,"end":14,"scope":"entity.other.attribute-name.tag.diet"},{"start":14,"end":15,"scope":"attribute_value"},{"start":15,"end":16,"scope":"string.quoted.diet"},{"start":16,"end":21,"scope":"string.quoted.diet"},{"start":21,"end":22,"scope":"string.quoted.diet"},{"start":22,"end":23,"scope":"constant.name.attribute.tag.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":6,"scope":"entity.name.tag.diet"},{"start":6,"end":7,"scope":"constant.name.attribute.tag.diet"},{"start":7,"end":11,"scope":"entity.other.attribute-name.tag.diet"},{"start":11,"end":12,"scope":"attribute_value"},{"start":12,"end":13,"scope":"string.quoted.diet"},{"start":13,"end":21,"scope":"string.quoted.diet"},{"start":21,"end":22,"scope":"string.quoted.diet"},{"start":22,"end":24,"scope":"meta.tag.other"},{"start":24,"end":31,"scope":"entity.other.attribute-name.tag.diet"},{"start":31,"end":32,"scope":"attribute_value"},{"start":32,"end":33,"scope":"string.quoted.diet"},{"start":33,"end":70,"scope":"string.quoted.diet"},{"start":70,"end":71,"scope":"string.quoted.diet"},{"start":71,"end":72,"scope":"constant.name.attribute.tag.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":6,"scope":"entity.name.tag.diet"},{"start":6,"end":7,"scope":"constant.name.attribute.tag.diet"},{"start":7,"end":17,"scope":"entity.other.attribute-name.tag.diet"},{"start":17,"end":18,"scope":"attribute_value"},{"start":18,"end":19,"scope":"string.quoted.diet"},{"start":19,"end":34,"scope":"string.quoted.diet"},{"start":34,"end":35,"scope":"string.quoted.diet"},{"start":35,"end":37,"scope":"meta.tag.other"},{"start":37,"end":44,"scope":"entity.other.attribute-name.tag.diet"},{"start":44,"end":45,"scope":"attribute_value"},{"start":45,"end":46,"scope":"string.quoted.diet"},{"start":46,"end":53,"scope":"string.quoted.diet"},{"start":53,"end":54,"scope":"string.quoted.diet"},{"start":54,"end":55,"scope":"constant.name.attribute.tag.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":7,"scope":"entity.name.tag.diet"},{"start":7,"end":16,"scope":"source.diet"}]
-[{"start":0,"end":1,"scope":"source.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":6,"scope":"entity.name.tag.diet"},{"start":6,"end":7,"scope":"constant.name.attribute.tag.diet"},{"start":7,"end":10,"scope":"entity.other.attribute-name.tag.diet"},{"start":10,"end":11,"scope":"attribute_value"},{"start":11,"end":12,"scope":"string.quoted.diet"},{"start":12,"end":22,"scope":"string.quoted.diet"},{"start":22,"end":23,"scope":"string.quoted.diet"},{"start":23,"end":25,"scope":"meta.tag.other"},{"start":25,"end":29,"scope":"entity.other.attribute-name.tag.diet"},{"start":29,"end":30,"scope":"attribute_value"},{"start":30,"end":31,"scope":"string.quoted.diet"},{"start":31,"end":40,"scope":"string.quoted.diet"},{"start":40,"end":41,"scope":"string.quoted.diet"},{"start":41,"end":42,"scope":"constant.name.attribute.tag.diet"}]
-[{"start":0,"end":1,"scope":"source.diet"},{"start":1,"end":5,"scope":"entity.name.tag.diet"}]
-[{"start":0,"end":2,"scope":"source.diet"},{"start":2,"end":7,"scope":"storage.type.import.include.diet"},{"start":7,"end":8,"scope":"meta.first-class.diet"},{"start":8,"end":15,"scope":"entity.name.type.include.diet"}]
-[{"start":0,"end":3,"scope":"source.diet"},{"start":3,"end":5,"scope":"entity.name.tag.diet"},{"start":5,"end":17,"scope":"source.diet"}]
-[{"start":0,"end":1,"scope":"source.diet"}]
+L1 C0..12: source.diet entity.name.tag.sgml.doctype.diet
+L2 C0..1: source.diet
+L3 C0..4: source.diet meta.tag.other entity.name.tag.diet
+L3 C4..5: source.diet meta.tag.other constant.name.attribute.tag.diet
+L3 C5..9: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L3 C9..10: source.diet meta.tag.other attribute_value
+L3 C10..11: source.diet meta.tag.other attribute_value string.quoted.diet
+L3 C11..13: source.diet meta.tag.other attribute_value string.quoted.diet
+L3 C13..14: source.diet meta.tag.other attribute_value string.quoted.diet
+L3 C14..15: source.diet meta.tag.other constant.name.attribute.tag.diet
+L4 C0..1: source.diet
+L4 C1..5: source.diet meta.tag.other entity.name.tag.diet
+L5 C0..2: source.diet
+L5 C2..6: source.diet meta.tag.other entity.name.tag.diet
+L5 C6..7: source.diet meta.tag.other constant.name.attribute.tag.diet
+L5 C7..14: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L5 C14..15: source.diet meta.tag.other attribute_value
+L5 C15..16: source.diet meta.tag.other attribute_value string.quoted.diet
+L5 C16..21: source.diet meta.tag.other attribute_value string.quoted.diet
+L5 C21..22: source.diet meta.tag.other attribute_value string.quoted.diet
+L5 C22..23: source.diet meta.tag.other constant.name.attribute.tag.diet
+L6 C0..2: source.diet
+L6 C2..6: source.diet meta.tag.other entity.name.tag.diet
+L6 C6..7: source.diet meta.tag.other constant.name.attribute.tag.diet
+L6 C7..11: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L6 C11..12: source.diet meta.tag.other attribute_value
+L6 C12..13: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C13..21: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C21..22: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C22..24: source.diet meta.tag.other
+L6 C24..31: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L6 C31..32: source.diet meta.tag.other attribute_value
+L6 C32..33: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C33..70: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C70..71: source.diet meta.tag.other attribute_value string.quoted.diet
+L6 C71..72: source.diet meta.tag.other constant.name.attribute.tag.diet
+L7 C0..2: source.diet
+L7 C2..6: source.diet meta.tag.other entity.name.tag.diet
+L7 C6..7: source.diet meta.tag.other constant.name.attribute.tag.diet
+L7 C7..17: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L7 C17..18: source.diet meta.tag.other attribute_value
+L7 C18..19: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C19..34: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C34..35: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C35..37: source.diet meta.tag.other
+L7 C37..44: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L7 C44..45: source.diet meta.tag.other attribute_value
+L7 C45..46: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C46..53: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C53..54: source.diet meta.tag.other attribute_value string.quoted.diet
+L7 C54..55: source.diet meta.tag.other constant.name.attribute.tag.diet
+L8 C0..2: source.diet
+L8 C2..7: source.diet meta.tag.other entity.name.tag.diet
+L8 C7..16: source.diet
+L9 C0..1: source.diet
+L10 C0..2: source.diet
+L10 C2..6: source.diet meta.tag.other entity.name.tag.diet
+L10 C6..7: source.diet meta.tag.other constant.name.attribute.tag.diet
+L10 C7..10: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L10 C10..11: source.diet meta.tag.other attribute_value
+L10 C11..12: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C12..22: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C22..23: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C23..25: source.diet meta.tag.other
+L10 C25..29: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L10 C29..30: source.diet meta.tag.other attribute_value
+L10 C30..31: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C31..40: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C40..41: source.diet meta.tag.other attribute_value string.quoted.diet
+L10 C41..42: source.diet meta.tag.other constant.name.attribute.tag.diet
+L11 C0..1: source.diet
+L11 C1..5: source.diet meta.tag.other entity.name.tag.diet
+L12 C0..2: source.diet
+L12 C2..7: source.diet meta.first-class.diet storage.type.import.include.diet
+L12 C7..8: source.diet meta.first-class.diet
+L12 C8..15: source.diet meta.first-class.diet entity.name.type.include.diet
+L13 C0..3: source.diet
+L13 C3..5: source.diet meta.tag.other entity.name.tag.diet
+L13 C5..17: source.diet
+L14 C0..1: source.diet

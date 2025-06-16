@@ -1,5 +1,32 @@
-[{"start":0,"end":3,"scope":"entity.name.function.d"},{"start":3,"end":4,"scope":"source.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"meta.statement.end.d"}]
-[{"start":0,"end":3,"scope":"entity.name.function.d"},{"start":3,"end":4,"scope":"source.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"meta.statement.end.d"},{"start":6,"end":7,"scope":"source.d"},{"start":7,"end":17,"scope":"comment.line.d"}]
-[{"start":0,"end":3,"scope":"entity.name.function.d"},{"start":3,"end":4,"scope":"source.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"meta.statement.end.d"},{"start":6,"end":7,"scope":"source.d"},{"start":7,"end":9,"scope":"comment.block.d"},{"start":9,"end":18,"scope":"comment.block.d"},{"start":18,"end":20,"scope":"comment.block.d"}]
-[{"start":0,"end":3,"scope":"entity.name.function.d"},{"start":3,"end":4,"scope":"source.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"meta.statement.end.d"},{"start":6,"end":7,"scope":"meta.statement.end.d"}]
-[{"start":0,"end":3,"scope":"entity.name.function.d"},{"start":3,"end":4,"scope":"source.d"},{"start":4,"end":5,"scope":"source.d"},{"start":5,"end":6,"scope":"meta.statement.end.d"},{"start":6,"end":7,"scope":"source.d"},{"start":7,"end":10,"scope":"entity.name.function.d"},{"start":10,"end":11,"scope":"source.d"},{"start":11,"end":12,"scope":"source.d"},{"start":12,"end":13,"scope":"meta.statement.end.d"}]
+L1 C0..3: source.d entity.name.function.d
+L1 C3..4: source.d
+L1 C4..5: source.d
+L1 C5..6: source.d meta.statement.end.d
+L2 C0..3: source.d entity.name.function.d
+L2 C3..4: source.d
+L2 C4..5: source.d
+L2 C5..6: source.d meta.statement.end.d
+L2 C6..7: source.d
+L2 C7..17: source.d comment.line.d
+L3 C0..3: source.d entity.name.function.d
+L3 C3..4: source.d
+L3 C4..5: source.d
+L3 C5..6: source.d meta.statement.end.d
+L3 C6..7: source.d
+L3 C7..9: source.d comment.block.d
+L3 C9..18: source.d comment.block.d
+L3 C18..20: source.d comment.block.d
+L4 C0..3: source.d entity.name.function.d
+L4 C3..4: source.d
+L4 C4..5: source.d
+L4 C5..6: source.d meta.statement.end.d
+L4 C6..7: source.d meta.statement.end.d
+L5 C0..3: source.d entity.name.function.d
+L5 C3..4: source.d
+L5 C4..5: source.d
+L5 C5..6: source.d meta.statement.end.d
+L5 C6..7: source.d
+L5 C7..10: source.d entity.name.function.d
+L5 C10..11: source.d
+L5 C11..12: source.d
+L5 C12..13: source.d meta.statement.end.d

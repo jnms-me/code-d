@@ -1,1 +1,19 @@
-[{"start":0,"end":3,"scope":"entity.name.tag.diet"},{"start":3,"end":9,"scope":"constant.other.class.diet"},{"start":9,"end":12,"scope":"constant.other.id.diet"},{"start":12,"end":13,"scope":"constant.name.attribute.tag.diet"},{"start":13,"end":17,"scope":"entity.other.attribute-name.tag.diet"},{"start":17,"end":18,"scope":"attribute_value"},{"start":18,"end":22,"scope":"variable.d"},{"start":22,"end":24,"scope":"meta.tag.other"},{"start":24,"end":28,"scope":"entity.other.attribute-name.tag.diet"},{"start":28,"end":29,"scope":"attribute_value"},{"start":29,"end":30,"scope":"constant.numeric.integer.decimal.d"},{"start":30,"end":32,"scope":"meta.tag.other"},{"start":32,"end":36,"scope":"entity.other.attribute-name.tag.diet"},{"start":36,"end":37,"scope":"attribute_value"},{"start":37,"end":38,"scope":"string.quoted.diet"},{"start":38,"end":43,"scope":"string.quoted.diet"},{"start":43,"end":44,"scope":"string.quoted.diet"},{"start":44,"end":45,"scope":"constant.name.attribute.tag.diet"},{"start":45,"end":57,"scope":"source.diet"}]
+L1 C0..3: source.diet meta.tag.other entity.name.tag.diet
+L1 C3..9: source.diet constant.other.class.diet
+L1 C9..12: source.diet constant.other.id.diet
+L1 C12..13: source.diet meta.tag.other constant.name.attribute.tag.diet
+L1 C13..17: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L1 C17..18: source.diet meta.tag.other attribute_value
+L1 C18..22: source.diet meta.tag.other attribute_value variable.d
+L1 C22..24: source.diet meta.tag.other
+L1 C24..28: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L1 C28..29: source.diet meta.tag.other attribute_value
+L1 C29..30: source.diet meta.tag.other attribute_value constant.numeric.integer.decimal.d
+L1 C30..32: source.diet meta.tag.other
+L1 C32..36: source.diet meta.tag.other entity.other.attribute-name.tag.diet
+L1 C36..37: source.diet meta.tag.other attribute_value
+L1 C37..38: source.diet meta.tag.other attribute_value string.quoted.diet
+L1 C38..43: source.diet meta.tag.other attribute_value string.quoted.diet
+L1 C43..44: source.diet meta.tag.other attribute_value string.quoted.diet
+L1 C44..45: source.diet meta.tag.other constant.name.attribute.tag.diet
+L1 C45..57: source.diet
