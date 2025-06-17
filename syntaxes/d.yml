@@ -10,8 +10,12 @@ patterns:
 repository:
   shebang:
     patterns:
-    - match: ^#!.*$
-      name: comment.line.shebang.d
+    - begin: ^#!
+      beginCaptures:
+        0:
+          name: comment.line.shebang.begin.d
+      contentName: comment.line.shebang.content.d
+      end: $
   comment:
     patterns:
     - include: '#comment.line'
@@ -23,38 +27,70 @@ repository:
     repository:
       comment.line:
         patterns:
-        - match: //(?!/).*$
-          name: comment.line.d
+        - begin: //(?!/)
+          beginCaptures:
+            0:
+              name: comment.line.begin.d
+          contentName: comment.line.content.d
+          end: $
       comment.line-ddoc:
         patterns:
-        - match: ///.*$
-          name: comment.line.documentation.d
+        - begin: ///
+          beginCaptures:
+            0:
+              name: comment.line.documentation.begin.d
+          contentName: comment.line.documentation.content.d
+          end: $
       comment.block:
         patterns:
         - begin: /\*(?!\*(?!/))
+          beginCaptures:
+            0:
+              name: comment.block.begin.d
+          contentName: comment.block.content.d
           end: \*/
-          name: comment.block.d
+          endCaptures:
+            0:
+              name: comment.block.end.d
       comment.block-ddoc:
         patterns:
         - begin: /\*\*
+          beginCaptures:
+            0:
+              name: comment.block.documentation.begin.d
+          contentName: comment.block.documentation.content.d
           end: \*/
-          name: comment.block.documentation.d
+          endCaptures:
+            0:
+              name: comment.block.documentation.end.d
       comment.block-nesting:
         patterns:
         - begin: /\+(?!\+(?!/))
+          beginCaptures:
+            0:
+              name: comment.block.nesting.begin.d
+          contentName: comment.block.nesting.content.d
           patterns:
           - include: '#comment.block-nesting'
           - include: '#comment.block-nesting-ddoc'
           end: \+/
-          name: comment.block.d
+          endCaptures:
+            0:
+              name: comment.block.nesting.end.d
       comment.block-nesting-ddoc:
         patterns:
         - begin: /\+\+
+          beginCaptures:
+            0:
+              name: comment.block.documentation.nesting.begin.d
+          contentName: comment.block.documentation.nesting.content.d
           patterns:
           - include: '#comment.block-nesting'
           - include: '#comment.block-nesting-ddoc'
           end: \+/
-          name: comment.block.documentation.d
+          endCaptures:
+            0:
+              name: comment.block.documentation.nesting.end.d
   declaration.module:
     patterns:
     - begin: \bmodule\b

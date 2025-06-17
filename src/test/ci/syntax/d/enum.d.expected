@@ -1,43 +1,43 @@
-L1 C0..3: source.d comment.block.documentation.d
-L2 C0..43: source.d comment.block.documentation.d
-L3 C0..1: source.d comment.block.documentation.d
-L3 C1..3: source.d comment.block.documentation.d
+L1 C0..3: source.d comment.block.documentation.begin.d
+L2 C0..43: source.d comment.block.documentation.content.d
+L3 C0..1: source.d comment.block.documentation.content.d
+L3 C1..3: source.d comment.block.documentation.end.d
 L4 C0..4: source.d storage.class.d
 L4 C4..5: source.d
 L4 C5..19: source.d variable.d
 L4 C19..22: source.d
 L5 C0..4: source.d
-L5 C4..7: source.d comment.block.documentation.d
-L6 C0..67: source.d comment.block.documentation.d
-L7 C0..38: source.d comment.block.documentation.d
-L8 C0..23: source.d comment.block.documentation.d
-L9 C0..5: source.d comment.block.documentation.d
-L9 C5..7: source.d comment.block.documentation.d
+L5 C4..7: source.d comment.block.documentation.begin.d
+L6 C0..67: source.d comment.block.documentation.content.d
+L7 C0..38: source.d comment.block.documentation.content.d
+L8 C0..23: source.d comment.block.documentation.content.d
+L9 C0..5: source.d comment.block.documentation.content.d
+L9 C5..7: source.d comment.block.documentation.end.d
 L10 C0..4: source.d
 L10 C4..21: source.d variable.d
 L10 C21..22: source.d keyword.operator.comma.d
 L11 C0..1: source.d
 L12 C0..4: source.d
-L12 C4..7: source.d comment.block.documentation.d
-L13 C0..65: source.d comment.block.documentation.d
-L14 C0..46: source.d comment.block.documentation.d
-L15 C0..23: source.d comment.block.documentation.d
-L16 C0..5: source.d comment.block.documentation.d
-L16 C5..7: source.d comment.block.documentation.d
+L12 C4..7: source.d comment.block.documentation.begin.d
+L13 C0..65: source.d comment.block.documentation.content.d
+L14 C0..46: source.d comment.block.documentation.content.d
+L15 C0..23: source.d comment.block.documentation.content.d
+L16 C0..5: source.d comment.block.documentation.content.d
+L16 C5..7: source.d comment.block.documentation.end.d
 L17 C0..4: source.d
 L17 C4..19: source.d variable.d
 L17 C19..20: source.d keyword.operator.comma.d
 L18 C0..1: source.d
 L19 C0..4: source.d
-L19 C4..7: source.d comment.block.documentation.d
-L20 C0..69: source.d comment.block.documentation.d
-L21 C0..69: source.d comment.block.documentation.d
-L22 C0..67: source.d comment.block.documentation.d
-L23 C0..46: source.d comment.block.documentation.d
-L24 C0..7: source.d comment.block.documentation.d
-L25 C0..22: source.d comment.block.documentation.d
-L26 C0..5: source.d comment.block.documentation.d
-L26 C5..7: source.d comment.block.documentation.d
+L19 C4..7: source.d comment.block.documentation.begin.d
+L20 C0..69: source.d comment.block.documentation.content.d
+L21 C0..69: source.d comment.block.documentation.content.d
+L22 C0..67: source.d comment.block.documentation.content.d
+L23 C0..46: source.d comment.block.documentation.content.d
+L24 C0..7: source.d comment.block.documentation.content.d
+L25 C0..22: source.d comment.block.documentation.content.d
+L26 C0..5: source.d comment.block.documentation.content.d
+L26 C5..7: source.d comment.block.documentation.end.d
 L27 C0..4: source.d
 L27 C4..28: source.d variable.d
 L27 C28..29: source.d keyword.operator.comma.d

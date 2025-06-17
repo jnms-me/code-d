@@ -1,7 +1,7 @@
 L1 C0..11: source.d keyword.control.static-if.begin.d
-L1 C11..13: source.d comment.block.d
-L1 C13..26: source.d comment.block.d
-L1 C26..28: source.d comment.block.d
+L1 C11..13: source.d comment.block.begin.d
+L1 C13..26: source.d comment.block.content.d
+L1 C26..28: source.d comment.block.end.d
 L1 C28..29: source.d
 L1 C29..30: source.d variable.d
 L1 C30..31: source.d
@@ -23,8 +23,8 @@ L1 C63..64: source.d
 L1 C64..69: source.d variable.d
 L1 C69..70: source.d meta.statement.end.d
 L2 C0..15: source.d keyword.other.static-assert.begin.d
-L2 C15..17: source.d comment.block.d
-L2 C17..19: source.d comment.block.d
+L2 C15..17: source.d comment.block.begin.d
+L2 C17..19: source.d comment.block.end.d
 L2 C19..20: source.d
 L2 C20..23: source.d keyword.token.is.begin.d
 L2 C23..30: source.d keyword.token.typeof.d

@@ -7,15 +7,16 @@ L2 C3..4: source.d
 L2 C4..5: source.d
 L2 C5..6: source.d meta.statement.end.d
 L2 C6..7: source.d
-L2 C7..17: source.d comment.line.d
+L2 C7..9: source.d comment.line.begin.d
+L2 C9..17: source.d comment.line.content.d
 L3 C0..3: source.d entity.name.function.d
 L3 C3..4: source.d
 L3 C4..5: source.d
 L3 C5..6: source.d meta.statement.end.d
 L3 C6..7: source.d
-L3 C7..9: source.d comment.block.d
-L3 C9..18: source.d comment.block.d
-L3 C18..20: source.d comment.block.d
+L3 C7..9: source.d comment.block.begin.d
+L3 C9..18: source.d comment.block.content.d
+L3 C18..20: source.d comment.block.end.d
 L4 C0..3: source.d entity.name.function.d
 L4 C3..4: source.d
 L4 C4..5: source.d

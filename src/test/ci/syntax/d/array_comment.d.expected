@@ -10,7 +10,8 @@ L1 C11..12: source.d string.double-quoted-string.d string.character.d
 L1 C12..13: source.d string.double-quoted-string.d
 L1 C13..14: source.d keyword.operator.comma.d
 L1 C14..15: source.d
-L1 C15..25: source.d comment.line.d
+L1 C15..17: source.d comment.line.begin.d
+L1 C17..25: source.d comment.line.content.d
 L2 C0..4: source.d
 L2 C4..5: source.d string.double-quoted-string.d
 L2 C5..6: source.d string.double-quoted-string.d string.character.d

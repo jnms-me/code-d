@@ -1,4 +1,5 @@
-L1 C0..11: source.d comment.line.d
+L1 C0..2: source.d comment.line.begin.d
+L1 C2..11: source.d comment.line.content.d
 L2 C0..5: source.d keyword.other.alias.d
 L2 C5..6: source.d
 L2 C6..19: source.d variable.d
@@ -23,16 +24,16 @@ L3 C34..35: source.d
 L3 C35..36: source.d
 L3 C36..37: source.d
 L4 C0..8: source.d
-L4 C8..10: source.d comment.block.d
-L4 C10..42: source.d comment.block.d
-L4 C42..44: source.d comment.block.d
+L4 C8..10: source.d comment.block.begin.d
+L4 C10..42: source.d comment.block.content.d
+L4 C42..44: source.d comment.block.end.d
 L4 C44..45: source.d
 L4 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L4 C49..50: source.d keyword.operator.comma.d
 L5 C0..8: source.d
-L5 C8..10: source.d comment.block.d
-L5 C10..42: source.d comment.block.d
-L5 C42..44: source.d comment.block.d
+L5 C8..10: source.d comment.block.begin.d
+L5 C10..42: source.d comment.block.content.d
+L5 C42..44: source.d comment.block.end.d
 L5 C44..45: source.d
 L5 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L5 C49..50: source.d keyword.operator.comma.d
@@ -43,9 +44,9 @@ L5 C56..57: source.d
 L5 C57..61: source.d constant.numeric.integer.hexadecimal.d
 L5 C61..62: source.d keyword.operator.comma.d
 L6 C0..8: source.d
-L6 C8..10: source.d comment.block.d
-L6 C10..42: source.d comment.block.d
-L6 C42..44: source.d comment.block.d
+L6 C8..10: source.d comment.block.begin.d
+L6 C10..42: source.d comment.block.content.d
+L6 C42..44: source.d comment.block.end.d
 L6 C44..45: source.d
 L6 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L6 C49..50: source.d keyword.operator.comma.d
@@ -59,9 +60,9 @@ L6 C62..63: source.d
 L6 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L6 C67..68: source.d keyword.operator.comma.d
 L7 C0..8: source.d
-L7 C8..10: source.d comment.block.d
-L7 C10..42: source.d comment.block.d
-L7 C42..44: source.d comment.block.d
+L7 C8..10: source.d comment.block.begin.d
+L7 C10..42: source.d comment.block.content.d
+L7 C42..44: source.d comment.block.end.d
 L7 C44..45: source.d
 L7 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L7 C49..50: source.d keyword.operator.comma.d
@@ -75,9 +76,9 @@ L7 C62..63: source.d
 L7 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L7 C67..68: source.d keyword.operator.comma.d
 L8 C0..8: source.d
-L8 C8..10: source.d comment.block.d
-L8 C10..42: source.d comment.block.d
-L8 C42..44: source.d comment.block.d
+L8 C8..10: source.d comment.block.begin.d
+L8 C10..42: source.d comment.block.content.d
+L8 C42..44: source.d comment.block.end.d
 L8 C44..45: source.d
 L8 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L8 C49..50: source.d keyword.operator.comma.d
@@ -91,9 +92,9 @@ L8 C62..63: source.d
 L8 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L8 C67..68: source.d keyword.operator.comma.d
 L9 C0..8: source.d
-L9 C8..10: source.d comment.block.d
-L9 C10..42: source.d comment.block.d
-L9 C42..44: source.d comment.block.d
+L9 C8..10: source.d comment.block.begin.d
+L9 C10..42: source.d comment.block.content.d
+L9 C42..44: source.d comment.block.end.d
 L9 C44..45: source.d
 L9 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L9 C49..50: source.d keyword.operator.comma.d
@@ -110,16 +111,16 @@ L9 C68..69: source.d
 L9 C69..73: source.d constant.numeric.integer.hexadecimal.d
 L9 C73..74: source.d keyword.operator.comma.d
 L10 C0..8: source.d
-L10 C8..10: source.d comment.block.d
-L10 C10..42: source.d comment.block.d
-L10 C42..44: source.d comment.block.d
+L10 C8..10: source.d comment.block.begin.d
+L10 C10..42: source.d comment.block.content.d
+L10 C42..44: source.d comment.block.end.d
 L10 C44..45: source.d
 L10 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L10 C49..50: source.d keyword.operator.comma.d
 L11 C0..8: source.d
-L11 C8..10: source.d comment.block.d
-L11 C10..42: source.d comment.block.d
-L11 C42..44: source.d comment.block.d
+L11 C8..10: source.d comment.block.begin.d
+L11 C10..42: source.d comment.block.content.d
+L11 C42..44: source.d comment.block.end.d
 L11 C44..45: source.d
 L11 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L11 C49..50: source.d keyword.operator.comma.d
@@ -144,16 +145,16 @@ L13 C35..36: source.d
 L13 C36..37: source.d
 L13 C37..38: source.d
 L14 C0..8: source.d
-L14 C8..10: source.d comment.block.d
-L14 C10..42: source.d comment.block.d
-L14 C42..44: source.d comment.block.d
+L14 C8..10: source.d comment.block.begin.d
+L14 C10..42: source.d comment.block.content.d
+L14 C42..44: source.d comment.block.end.d
 L14 C44..45: source.d
 L14 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L14 C49..50: source.d keyword.operator.comma.d
 L15 C0..8: source.d
-L15 C8..10: source.d comment.block.d
-L15 C10..42: source.d comment.block.d
-L15 C42..44: source.d comment.block.d
+L15 C8..10: source.d comment.block.begin.d
+L15 C10..42: source.d comment.block.content.d
+L15 C42..44: source.d comment.block.end.d
 L15 C44..45: source.d
 L15 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L15 C49..50: source.d keyword.operator.comma.d
@@ -164,9 +165,9 @@ L15 C56..57: source.d
 L15 C57..61: source.d constant.numeric.integer.hexadecimal.d
 L15 C61..62: source.d keyword.operator.comma.d
 L16 C0..8: source.d
-L16 C8..10: source.d comment.block.d
-L16 C10..42: source.d comment.block.d
-L16 C42..44: source.d comment.block.d
+L16 C8..10: source.d comment.block.begin.d
+L16 C10..42: source.d comment.block.content.d
+L16 C42..44: source.d comment.block.end.d
 L16 C44..45: source.d
 L16 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L16 C49..50: source.d keyword.operator.comma.d
@@ -177,9 +178,9 @@ L16 C56..57: source.d
 L16 C57..61: source.d constant.numeric.integer.hexadecimal.d
 L16 C61..62: source.d keyword.operator.comma.d
 L17 C0..8: source.d
-L17 C8..10: source.d comment.block.d
-L17 C10..42: source.d comment.block.d
-L17 C42..44: source.d comment.block.d
+L17 C8..10: source.d comment.block.begin.d
+L17 C10..42: source.d comment.block.content.d
+L17 C42..44: source.d comment.block.end.d
 L17 C44..45: source.d
 L17 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L17 C49..50: source.d keyword.operator.comma.d
@@ -193,9 +194,9 @@ L17 C62..63: source.d
 L17 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L17 C67..68: source.d keyword.operator.comma.d
 L18 C0..8: source.d
-L18 C8..10: source.d comment.block.d
-L18 C10..42: source.d comment.block.d
-L18 C42..44: source.d comment.block.d
+L18 C8..10: source.d comment.block.begin.d
+L18 C10..42: source.d comment.block.content.d
+L18 C42..44: source.d comment.block.end.d
 L18 C44..45: source.d
 L18 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L18 C49..50: source.d keyword.operator.comma.d
@@ -209,9 +210,9 @@ L18 C62..63: source.d
 L18 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L18 C67..68: source.d keyword.operator.comma.d
 L19 C0..8: source.d
-L19 C8..10: source.d comment.block.d
-L19 C10..42: source.d comment.block.d
-L19 C42..44: source.d comment.block.d
+L19 C8..10: source.d comment.block.begin.d
+L19 C10..42: source.d comment.block.content.d
+L19 C42..44: source.d comment.block.end.d
 L19 C44..45: source.d
 L19 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L19 C49..50: source.d keyword.operator.comma.d
@@ -225,9 +226,9 @@ L19 C62..63: source.d
 L19 C63..67: source.d constant.numeric.integer.hexadecimal.d
 L19 C67..68: source.d keyword.operator.comma.d
 L20 C0..8: source.d
-L20 C8..10: source.d comment.block.d
-L20 C10..42: source.d comment.block.d
-L20 C42..44: source.d comment.block.d
+L20 C8..10: source.d comment.block.begin.d
+L20 C10..42: source.d comment.block.content.d
+L20 C42..44: source.d comment.block.end.d
 L20 C44..45: source.d
 L20 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L20 C49..50: source.d keyword.operator.comma.d
@@ -244,16 +245,16 @@ L20 C68..69: source.d
 L20 C69..73: source.d constant.numeric.integer.hexadecimal.d
 L20 C73..74: source.d keyword.operator.comma.d
 L21 C0..8: source.d
-L21 C8..10: source.d comment.block.d
-L21 C10..42: source.d comment.block.d
-L21 C42..44: source.d comment.block.d
+L21 C8..10: source.d comment.block.begin.d
+L21 C10..42: source.d comment.block.content.d
+L21 C42..44: source.d comment.block.end.d
 L21 C44..45: source.d
 L21 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L21 C49..50: source.d keyword.operator.comma.d
 L22 C0..8: source.d
-L22 C8..10: source.d comment.block.d
-L22 C10..42: source.d comment.block.d
-L22 C42..44: source.d comment.block.d
+L22 C8..10: source.d comment.block.begin.d
+L22 C10..42: source.d comment.block.content.d
+L22 C42..44: source.d comment.block.end.d
 L22 C44..45: source.d
 L22 C45..49: source.d constant.numeric.integer.hexadecimal.d
 L22 C49..50: source.d keyword.operator.comma.d

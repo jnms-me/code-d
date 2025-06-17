@@ -1,2 +1,3 @@
-L1 C0..32: source.d comment.line.shebang.d
+L1 C0..2: source.d comment.line.shebang.begin.d
+L1 C2..32: source.d comment.line.shebang.content.d
 L2 C0..1: source.d

@@ -1,38 +1,39 @@
-L1 C0..3: source.d comment.block.documentation.d
-L2 C0..21: source.d comment.block.documentation.d
-L3 C0..3: source.d comment.block.documentation.d
-L4 C0..42: source.d comment.block.documentation.d
-L5 C0..27: source.d comment.block.documentation.d
-L6 C0..3: source.d comment.block.documentation.d
-L7 C0..15: source.d comment.block.documentation.d
-L8 C0..1: source.d comment.block.documentation.d
-L8 C1..3: source.d comment.block.documentation.d
+L1 C0..3: source.d comment.block.documentation.begin.d
+L2 C0..21: source.d comment.block.documentation.content.d
+L3 C0..3: source.d comment.block.documentation.content.d
+L4 C0..42: source.d comment.block.documentation.content.d
+L5 C0..27: source.d comment.block.documentation.content.d
+L6 C0..3: source.d comment.block.documentation.content.d
+L7 C0..15: source.d comment.block.documentation.content.d
+L8 C0..1: source.d comment.block.documentation.content.d
+L8 C1..3: source.d comment.block.documentation.end.d
 L9 C0..6: source.d keyword.other.module.d meta.module-declaration.begin.d
 L9 C6..7: source.d meta.module-declaration.content.d
 L9 C7..11: source.d meta.module-declaration.content.d variable.parameter.module.d
 L9 C11..12: source.d meta.module-declaration.end.d
 L10 C0..1: source.d
-L11 C0..3: source.d comment.block.documentation.d
-L11 C3..5: source.d comment.block.documentation.d
-L12 C0..41: source.d comment.block.documentation.d
-L13 C0..3: source.d comment.block.documentation.d
-L14 C0..40: source.d comment.block.documentation.d
-L15 C0..10: source.d comment.block.documentation.d
-L15 C10..12: source.d comment.block.documentation.d comment.block.d
-L15 C12..18: source.d comment.block.documentation.d comment.block.d
-L15 C18..21: source.d comment.block.documentation.d comment.block.d comment.block.documentation.d
-L15 C21..41: source.d comment.block.documentation.d comment.block.d comment.block.documentation.d
-L15 C41..43: source.d comment.block.documentation.d comment.block.d comment.block.documentation.d
-L15 C43..45: source.d comment.block.documentation.d comment.block.d
-L15 C45..56: source.d comment.block.documentation.d
-L16 C0..1: source.d comment.block.documentation.d
-L16 C1..3: source.d comment.block.documentation.d
+L11 C0..3: source.d comment.block.documentation.nesting.begin.d
+L11 C3..5: source.d comment.block.documentation.nesting.content.d
+L12 C0..41: source.d comment.block.documentation.nesting.content.d
+L13 C0..3: source.d comment.block.documentation.nesting.content.d
+L14 C0..40: source.d comment.block.documentation.nesting.content.d
+L15 C0..10: source.d comment.block.documentation.nesting.content.d
+L15 C10..12: source.d comment.block.documentation.nesting.content.d comment.block.nesting.begin.d
+L15 C12..18: source.d comment.block.documentation.nesting.content.d comment.block.nesting.content.d
+L15 C18..21: source.d comment.block.documentation.nesting.content.d comment.block.nesting.content.d comment.block.documentation.nesting.begin.d
+L15 C21..41: source.d comment.block.documentation.nesting.content.d comment.block.nesting.content.d comment.block.documentation.nesting.content.d
+L15 C41..43: source.d comment.block.documentation.nesting.content.d comment.block.nesting.content.d comment.block.documentation.nesting.end.d
+L15 C43..45: source.d comment.block.documentation.nesting.content.d comment.block.nesting.end.d
+L15 C45..56: source.d comment.block.documentation.nesting.content.d
+L16 C0..1: source.d comment.block.documentation.nesting.content.d
+L16 C1..3: source.d comment.block.documentation.nesting.end.d
 L17 C0..6: source.d storage.type.struct.d
 L17 C6..7: source.d
 L17 C7..8: source.d entity.name.type.struct.d
 L18 C0..2: source.d
 L19 C0..4: source.d
-L19 C4..44: source.d comment.line.documentation.d
+L19 C4..7: source.d comment.line.documentation.begin.d
+L19 C7..44: source.d comment.line.documentation.content.d
 L20 C0..4: source.d
 L20 C4..8: source.d storage.type.basic-type.d
 L20 C8..9: source.d
@@ -50,8 +51,8 @@ L25 C6..7: source.d
 L25 C7..8: source.d
 L25 C8..9: source.d source.d
 L25 C9..10: source.d source.d
-L25 C10..12: source.d comment.block.d
-L25 C12..14: source.d comment.block.d
+L25 C10..12: source.d comment.block.begin.d
+L25 C12..14: source.d comment.block.end.d
 L25 C14..15: source.d
 L26 C0..4: source.d storage.type.basic-type.d
 L26 C4..5: source.d
@@ -60,6 +61,6 @@ L26 C6..7: source.d
 L26 C7..8: source.d
 L26 C8..9: source.d source.d
 L26 C9..10: source.d source.d
-L26 C10..12: source.d comment.block.d
-L26 C12..14: source.d comment.block.d
+L26 C10..12: source.d comment.block.nesting.begin.d
+L26 C12..14: source.d comment.block.nesting.end.d
 L26 C14..15: source.d
