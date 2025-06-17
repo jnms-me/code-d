@@ -107,10 +107,31 @@ repository:
       endCaptures:
         0:
           name: meta.module-declaration.end.d
+  import-declaration:
+    patterns:
+    - begin: \b(static\s+)?(import)\s+(?!\()
+      end: ;
+      beginCaptures:
+        1:
+          name: keyword.package.import.d
+        2:
+          name: keyword.package.import.d
+      endCaptures:
+        0:
+          name: meta.import.end.d
+      patterns:
+      - include: '#import-identifier'
+      - include: '#comma'
+      - include: '#comment'
   identifier.module:
     patterns:
     - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
       name: variable.parameter.module.d
+  import-identifier:
+    patterns:
+    - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
+      name: variable.parameter.import.d
+
   type:
     patterns:
     - include: '#typeof'
@@ -1079,22 +1100,6 @@ repository:
         - match: ;
           name: keyword.operator.semi-colon.d
         - include: 'source.d'
-  import-declaration:
-    patterns:
-    - begin: \b(static\s+)?(import)\s+(?!\()
-      end: ;
-      beginCaptures:
-        1:
-          name: keyword.package.import.d
-        2:
-          name: keyword.package.import.d
-      endCaptures:
-        0:
-          name: meta.import.end.d
-      patterns:
-      - include: '#import-identifier'
-      - include: '#comma'
-      - include: '#comment'
   mixin-declaration:
     patterns:
     - begin: \bmixin\s*\(
@@ -1349,10 +1354,6 @@ repository:
     patterns:
     - match: \b((\.\s*)?[_\w][_\d\w]*)(\s*\.\s*[_\w][_\d\w]*)*\b
       name: variable.d
-  import-identifier:
-    patterns:
-    - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
-      name: variable.parameter.import.d
   eof:
     patterns:
     - begin: __EOF__
