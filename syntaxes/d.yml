@@ -4,6 +4,7 @@ patterns:
 - include: '#shebang'
 - include: '#comment'
 - include: '#declaration.module'
+- include: '#declaration.import'
 - include: '#type'
 - include: '#statement'
 - include: '#expression'
@@ -91,6 +92,7 @@ repository:
           endCaptures:
             0:
               name: comment.block.documentation.nesting.end.d
+
   declaration.module:
     patterns:
     - begin: \bmodule\b
@@ -107,7 +109,7 @@ repository:
       endCaptures:
         0:
           name: meta.module-declaration.end.d
-  import-declaration:
+  declaration.import:
     patterns:
     - begin: \b(static\s+)?(import)\s+(?!\()
       end: ;
@@ -120,17 +122,13 @@ repository:
         0:
           name: meta.import.end.d
       patterns:
-      - include: '#import-identifier'
+      - include: '#identifier.module'
       - include: '#comma'
       - include: '#comment'
   identifier.module:
     patterns:
     - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
       name: variable.parameter.module.d
-  import-identifier:
-    patterns:
-    - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
-      name: variable.parameter.import.d
 
   type:
     patterns:
@@ -734,7 +732,6 @@ repository:
     - include: '#alias-declaration'
     - include: '#aggregate-declaration'
     - include: '#enum-declaration'
-    - include: '#import-declaration'
     - include: '#storage-class'
     - include: '#void-initializer'
     - include: '#mixin-declaration'

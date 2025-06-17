@@ -12,6 +12,9 @@
       "include": "#declaration.module"
     },
     {
+      "include": "#declaration.import"
+    },
+    {
       "include": "#type"
     },
     {
@@ -207,7 +210,7 @@
         }
       ]
     },
-    "import-declaration": {
+    "declaration.import": {
       "patterns": [
         {
           "begin": "\\b(static\\s+)?(import)\\s+(?!\\()",
@@ -227,7 +230,7 @@
           },
           "patterns": [
             {
-              "include": "#import-identifier"
+              "include": "#identifier.module"
             },
             {
               "include": "#comma"
@@ -244,14 +247,6 @@
         {
           "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
           "name": "variable.parameter.module.d"
-        }
-      ]
-    },
-    "import-identifier": {
-      "patterns": [
-        {
-          "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
-          "name": "variable.parameter.import.d"
         }
       ]
     },
@@ -1541,9 +1536,6 @@
         },
         {
           "include": "#enum-declaration"
-        },
-        {
-          "include": "#import-declaration"
         },
         {
           "include": "#storage-class"
