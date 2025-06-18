@@ -15,6 +15,9 @@
       "include": "#declaration.import"
     },
     {
+      "include": "#declaration.alias"
+    },
+    {
       "include": "#type"
     },
     {
@@ -222,7 +225,7 @@
           "contentName": "meta.declaration.import.content.d",
           "patterns": [
             {
-              "include": "#identifier.symbol"
+              "include": "#identifier.symbol.name"
             },
             {
               "include": "#operator.equal.alias"
@@ -246,10 +249,43 @@
         }
       ]
     },
+    "declaration.alias": {
+      "patterns": [
+        {
+          "begin": "\\balias\\b",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.other.alias.d meta.declaration.alias.begin.d"
+            }
+          },
+          "contentName": "meta.declaration.alias.content.d",
+          "patterns": [
+            {
+              "include": "#identifier.symbol.name"
+            },
+            {
+              "include": "#operator.equal.alias"
+            },
+            {
+              "include": "#type"
+            },
+            {
+              "include": "#expression"
+            }
+          ],
+          "end": ";",
+          "endCaptures": {
+            "0": {
+              "name": "meta.declaration.alias.end.d"
+            }
+          }
+        }
+      ]
+    },
     "identifier.module": {
       "patterns": [
         {
-          "match": "((?!\\d)\\w+)(\\s*\\.\\s*\\g'1')*",
+          "match": "\\b((?!\\d)\\w+)(\\s*\\.\\s*\\g'1')*\\b",
           "name": "variable.parameter.module.d"
         }
       ]
@@ -258,6 +294,14 @@
       "patterns": [
         {
           "match": "\\b((\\.\\s*)?[_\\w][_\\d\\w]*)(\\s*\\.\\s*[_\\w][_\\d\\w]*)*\\b",
+          "name": "variable.d"
+        }
+      ]
+    },
+    "identifier.symbol.name": {
+      "patterns": [
+        {
+          "match": "\\b((?!\\d)\\w+)\\b",
           "name": "variable.d"
         }
       ]
@@ -1557,9 +1601,6 @@
     "declaration": {
       "patterns": [
         {
-          "include": "#alias-declaration"
-        },
-        {
           "include": "#aggregate-declaration"
         },
         {
@@ -1573,36 +1614,6 @@
         },
         {
           "include": "#mixin-declaration"
-        }
-      ]
-    },
-    "alias-declaration": {
-      "patterns": [
-        {
-          "begin": "\\b(alias)\\b\\s*",
-          "beginCaptures": {
-            "1": {
-              "name": "keyword.other.alias.d"
-            }
-          },
-          "end": ";",
-          "endCaptures": {
-            "0": {
-              "name": "meta.alias.end.d"
-            }
-          },
-          "patterns": [
-            {
-              "include": "#type"
-            },
-            {
-              "match": "=(?![=>])",
-              "name": "keyword.operator.equal.alias.d"
-            },
-            {
-              "include": "#expression"
-            }
-          ]
         }
       ]
     },

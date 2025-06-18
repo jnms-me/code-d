@@ -5,6 +5,7 @@ patterns:
 - include: '#comment'
 - include: '#declaration.module'
 - include: '#declaration.import'
+- include: '#declaration.alias'
 - include: '#type'
 - include: '#statement'
 - include: '#expression'
@@ -128,6 +129,25 @@ repository:
       endCaptures:
         0:
           name: meta.declaration.import.end.d
+
+  declaration.alias:
+    patterns:
+    - begin: \balias\b
+      beginCaptures:
+        0:
+          name:
+            keyword.other.alias.d
+            meta.declaration.alias.begin.d
+      contentName: meta.declaration.alias.content.d
+      patterns:
+      - include: '#identifier.symbol.name'
+      - include: '#operator.equal.alias'
+      - include: '#type'
+      - include: '#expression'
+      end: ;
+      endCaptures:
+        0:
+          name: meta.declaration.alias.end.d
 
   identifier.module:
     patterns:
@@ -750,27 +770,11 @@ repository:
       name: storage.type.assembly.register-64.d
   declaration:
     patterns:
-    - include: '#alias-declaration'
     - include: '#aggregate-declaration'
     - include: '#enum-declaration'
     - include: '#storage-class'
     - include: '#void-initializer'
     - include: '#mixin-declaration'
-  alias-declaration:
-    patterns:
-    - begin: \b(alias)\b\s*
-      beginCaptures:
-        1:
-          name: keyword.other.alias.d
-      end: ;
-      endCaptures:
-        0:
-          name: meta.alias.end.d
-      patterns:
-      - include: '#type'
-      - match: =(?![=>])
-        name: keyword.operator.equal.alias.d
-      - include: '#expression'
   storage-class:
     patterns:
     - match: \b(deprecated|enum|static|extern|abstract|final|override|synchronized|auto|scope|const|immutable|inout|shared|__gshared|nothrow|pure|ref)\b
