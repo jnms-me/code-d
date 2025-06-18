@@ -100,35 +100,56 @@ repository:
         0:
           name:
             keyword.other.module.d
-            meta.module-declaration.begin.d
-      contentName: meta.module-declaration.content.d
+            meta.declaration.module.begin.d
+      contentName: meta.declaration.module.content.d
       patterns:
       - include: '#identifier.module'
       - include: '#comment'
       end: ;
       endCaptures:
         0:
-          name: meta.module-declaration.end.d
+          name: meta.declaration.module.end.d
   declaration.import:
     patterns:
-    - begin: \b(static\s+)?(import)\s+(?!\()
-      end: ;
+    - begin: \bimport\b(?!\s*\()
       beginCaptures:
-        1:
-          name: keyword.package.import.d
-        2:
-          name: keyword.package.import.d
+        0:
+          name:
+            keyword.other.import.d
+            meta.declaration.import.begin.d
+      contentName: meta.declaration.import.content.d
+      patterns: # Support all import forms, best effort
+      - include: '#identifier.symbol.name'
+      - include: '#operator.equal.alias'
+      - include: '#identifier.module'
+      - include: '#operator.comma'
+      - include: '#comment'
+      end: ;
       endCaptures:
         0:
-          name: meta.import.end.d
-      patterns:
-      - include: '#identifier.module'
-      - include: '#comma'
-      - include: '#comment'
+          name: meta.declaration.import.end.d
+
   identifier.module:
     patterns:
-    - match: ([_a-zA-Z][_\d\w]*)(\s*\.\s*[_a-zA-Z][_\d\w]*)*
+    - match: \b((?!\d)\w+)(\s*\.\s*\g'1')*\b
       name: variable.parameter.module.d
+  identifier.symbol:
+    patterns:
+    - match: \b((\.\s*)?[_\w][_\d\w]*)(\s*\.\s*[_\w][_\d\w]*)*\b
+      name: variable.d
+  identifier.symbol.name:
+    patterns:
+    - match: \b((?!\d)\w+)\b
+      name: variable.d
+
+  operator.equal.alias:
+    patterns:
+    - match: '='
+      name: keyword.operator.equal.alias.d
+  operator.comma:
+    patterns:
+    - match: ','
+      name: keyword.operator.comma.d
 
   type:
     patterns:
@@ -201,7 +222,7 @@ repository:
     - include: '#delete-expression'
     - include: '#cast-expression'
     - include: '#type-specialization'
-    - include: '#comma'
+    - include: '#operator.comma'
     - include: '#special-keyword'
     - include: '#functions'
     - include: '#type'
@@ -312,7 +333,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   mixin-expression:
     patterns:
     - begin: \bmixin\s*\(
@@ -326,7 +347,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   import-expression:
     patterns:
     - begin: \b(import)\s*(\()
@@ -342,7 +363,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   typeid-expression:
     patterns:
     - match: \btypeid\s*(?=\()
@@ -363,7 +384,7 @@ repository:
           name: keyword.other.traits.end.d
       patterns:
       - include: '#traits-keyword'
-      - include: '#comma'
+      - include: '#operator.comma'
       - include: '#traits-argument'
   traits-keyword:
     patterns:
@@ -372,7 +393,7 @@ repository:
   traits-arguments:
     patterns:
     - include: '#traits-argument'
-    - include: '#comma'
+    - include: '#operator.comma'
   traits-argument:
     patterns:
     - include: '#expression'
@@ -522,7 +543,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   default-statement:
     patterns:
     - match: '\b(default)\s*(:)'
@@ -653,7 +674,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   is-expression:
     patterns:
     - begin: \bis\s*\(
@@ -667,7 +688,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
   parentheses-expression:
     patterns:
     - begin: \(
@@ -687,7 +708,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
+      - include: '#operator.comma'
     - match: \bdeprecated\b\s*(?!\()
       name: keyword.other.deprecated.plain.d
   asm-instruction:
@@ -706,7 +727,7 @@ repository:
     - include: '#register-64'
     - include: '#float-literal'
     - include: '#integer-literal'
-    - include: '#identifier'
+    - include: '#identifier.symbol'
   operands:
     patterns:
     - match: '\?|:'
@@ -807,7 +828,7 @@ repository:
         0:
           name: keyword.control.out.end.d
       patterns:
-      - include: '#identifier'
+      - include: '#identifier.symbol'
     - match: \bout\b
       name: keyword.control.out.d
   constructor:
@@ -931,8 +952,8 @@ repository:
         0:
           name: keyword.other.extern.cplusplus.end.d
       patterns:
-      - include: '#identifier'
-      - include: '#comma'
+      - include: '#identifier.symbol'
+      - include: '#operator.comma'
     - begin: \bextern\s*\(
       beginCaptures:
         0:
@@ -1019,7 +1040,7 @@ repository:
           name: keyword.other.version.identifer.end.d
       patterns:
       - include: '#integer-literal'
-      - include: '#identifier'
+      - include: '#identifier.symbol'
     - include: '#version-specification'
   debug-condition:
     patterns:
@@ -1033,7 +1054,7 @@ repository:
           name: keyword.other.debug.identifier.end.d
       patterns:
       - include: '#integer-literal'
-      - include: '#identifier'
+      - include: '#identifier.symbol'
     - match: \bdebug\b\s*(?!\()
       name: keyword.other.debug.plain.d
   version-specification:
@@ -1110,11 +1131,7 @@ repository:
       patterns:
       - include: '#comment'
       - include: '#expression'
-      - include: '#comma'
-  comma:
-    patterns:
-    - match: ','
-      name: keyword.operator.comma.d
+      - include: '#operator.comma'
   colon:
     patterns:
     - match: ':'
@@ -1138,7 +1155,7 @@ repository:
     - include: '#special-tokens'
     - include: '#special-token-sequence'
     - include: '#keyword'
-    - include: '#identifier'
+    - include: '#identifier.symbol'
   integer-literal:
     patterns:
     - include: '#decimal-integer'
@@ -1346,11 +1363,7 @@ repository:
     patterns:
     - match: ','
       name: keyword.other.comma.d
-    - include: '#identifier'
-  identifier:
-    patterns:
-    - match: \b((\.\s*)?[_\w][_\d\w]*)(\s*\.\s*[_\w][_\d\w]*)*\b
-      name: variable.d
+    - include: '#identifier.symbol'
   eof:
     patterns:
     - begin: __EOF__
@@ -1376,7 +1389,7 @@ repository:
     - include: '#keyword'
     - match: ~=|~|>>>|>>=|>>|>=|>|=>|==|=|<>|<=|<<|<|%=|%|#|&=|&&|&|\$|\|=|\|\||\||\+=|\+\+|\+|\^=|\^\^=|\^\^|\^|\*=|\*|\}|\{|\]|\[|\)|\(|\.\.\.|\.\.|\.|\?|\!>=|\!>|\!=|\!<>=|\!<>|\!<=|\!<|\!|/=|/|@|:|;|,|-=|--|-
       name: meta.lexical.token.symbolic.d
-    - include: '#identifier'
+    - include: '#identifier.symbol'
   keyword:
     patterns:
     - match: '\babstract\b'

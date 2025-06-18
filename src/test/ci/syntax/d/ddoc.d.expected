@@ -7,10 +7,10 @@ L6 C0..3: source.d comment.block.documentation.content.d
 L7 C0..15: source.d comment.block.documentation.content.d
 L8 C0..1: source.d comment.block.documentation.content.d
 L8 C1..3: source.d comment.block.documentation.end.d
-L9 C0..6: source.d keyword.other.module.d meta.module-declaration.begin.d
-L9 C6..7: source.d meta.module-declaration.content.d
-L9 C7..11: source.d meta.module-declaration.content.d variable.parameter.module.d
-L9 C11..12: source.d meta.module-declaration.end.d
+L9 C0..6: source.d keyword.other.module.d meta.declaration.module.begin.d
+L9 C6..7: source.d meta.declaration.module.content.d
+L9 C7..11: source.d meta.declaration.module.content.d variable.parameter.module.d
+L9 C11..12: source.d meta.declaration.module.end.d
 L10 C0..1: source.d
 L11 C0..3: source.d comment.block.documentation.nesting.begin.d
 L11 C3..5: source.d comment.block.documentation.nesting.content.d

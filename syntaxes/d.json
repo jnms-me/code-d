@@ -189,10 +189,10 @@
           "begin": "\\bmodule\\b",
           "beginCaptures": {
             "0": {
-              "name": "keyword.other.module.d meta.module-declaration.begin.d"
+              "name": "keyword.other.module.d meta.declaration.module.begin.d"
             }
           },
-          "contentName": "meta.module-declaration.content.d",
+          "contentName": "meta.declaration.module.content.d",
           "patterns": [
             {
               "include": "#identifier.module"
@@ -204,7 +204,7 @@
           "end": ";",
           "endCaptures": {
             "0": {
-              "name": "meta.module-declaration.end.d"
+              "name": "meta.declaration.module.end.d"
             }
           }
         }
@@ -213,40 +213,68 @@
     "declaration.import": {
       "patterns": [
         {
-          "begin": "\\b(static\\s+)?(import)\\s+(?!\\()",
-          "end": ";",
+          "begin": "\\bimport\\b(?!\\s*\\()",
           "beginCaptures": {
-            "1": {
-              "name": "keyword.package.import.d"
-            },
-            "2": {
-              "name": "keyword.package.import.d"
-            }
-          },
-          "endCaptures": {
             "0": {
-              "name": "meta.import.end.d"
+              "name": "keyword.other.import.d meta.declaration.import.begin.d"
             }
           },
+          "contentName": "meta.declaration.import.content.d",
           "patterns": [
+            {
+              "include": "#identifier.symbol"
+            },
+            {
+              "include": "#operator.equal.alias"
+            },
             {
               "include": "#identifier.module"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             },
             {
               "include": "#comment"
             }
-          ]
+          ],
+          "end": ";",
+          "endCaptures": {
+            "0": {
+              "name": "meta.declaration.import.end.d"
+            }
+          }
         }
       ]
     },
     "identifier.module": {
       "patterns": [
         {
-          "match": "([_a-zA-Z][_\\d\\w]*)(\\s*\\.\\s*[_a-zA-Z][_\\d\\w]*)*",
+          "match": "((?!\\d)\\w+)(\\s*\\.\\s*\\g'1')*",
           "name": "variable.parameter.module.d"
+        }
+      ]
+    },
+    "identifier.symbol": {
+      "patterns": [
+        {
+          "match": "\\b((\\.\\s*)?[_\\w][_\\d\\w]*)(\\s*\\.\\s*[_\\w][_\\d\\w]*)*\\b",
+          "name": "variable.d"
+        }
+      ]
+    },
+    "operator.equal.alias": {
+      "patterns": [
+        {
+          "match": "=",
+          "name": "keyword.operator.equal.alias.d"
+        }
+      ]
+    },
+    "operator.comma": {
+      "patterns": [
+        {
+          "match": ",",
+          "name": "keyword.operator.comma.d"
         }
       ]
     },
@@ -416,7 +444,7 @@
           "include": "#type-specialization"
         },
         {
-          "include": "#comma"
+          "include": "#operator.comma"
         },
         {
           "include": "#special-keyword"
@@ -641,7 +669,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -670,7 +698,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -702,7 +730,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -744,7 +772,7 @@
               "include": "#traits-keyword"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             },
             {
               "include": "#traits-argument"
@@ -767,7 +795,7 @@
           "include": "#traits-argument"
         },
         {
-          "include": "#comma"
+          "include": "#operator.comma"
         }
       ]
     },
@@ -1101,7 +1129,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -1362,7 +1390,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -1391,7 +1419,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         }
@@ -1433,7 +1461,7 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         },
@@ -1482,7 +1510,7 @@
           "include": "#integer-literal"
         },
         {
-          "include": "#identifier"
+          "include": "#identifier.symbol"
         }
       ]
     },
@@ -1703,7 +1731,7 @@
           },
           "patterns": [
             {
-              "include": "#identifier"
+              "include": "#identifier.symbol"
             }
           ]
         },
@@ -1958,10 +1986,10 @@
           },
           "patterns": [
             {
-              "include": "#identifier"
+              "include": "#identifier.symbol"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
         },
@@ -2143,7 +2171,7 @@
               "include": "#integer-literal"
             },
             {
-              "include": "#identifier"
+              "include": "#identifier.symbol"
             }
           ]
         },
@@ -2172,7 +2200,7 @@
               "include": "#integer-literal"
             },
             {
-              "include": "#identifier"
+              "include": "#identifier.symbol"
             }
           ]
         },
@@ -2326,17 +2354,9 @@
               "include": "#expression"
             },
             {
-              "include": "#comma"
+              "include": "#operator.comma"
             }
           ]
-        }
-      ]
-    },
-    "comma": {
-      "patterns": [
-        {
-          "match": ",",
-          "name": "keyword.operator.comma.d"
         }
       ]
     },
@@ -2394,7 +2414,7 @@
           "include": "#keyword"
         },
         {
-          "include": "#identifier"
+          "include": "#identifier.symbol"
         }
       ]
     },
@@ -2822,15 +2842,7 @@
           "name": "keyword.other.comma.d"
         },
         {
-          "include": "#identifier"
-        }
-      ]
-    },
-    "identifier": {
-      "patterns": [
-        {
-          "match": "\\b((\\.\\s*)?[_\\w][_\\d\\w]*)(\\s*\\.\\s*[_\\w][_\\d\\w]*)*\\b",
-          "name": "variable.d"
+          "include": "#identifier.symbol"
         }
       ]
     },
@@ -2889,7 +2901,7 @@
           "name": "meta.lexical.token.symbolic.d"
         },
         {
-          "include": "#identifier"
+          "include": "#identifier.symbol"
         }
       ]
     },
